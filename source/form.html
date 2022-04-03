@@ -44,93 +44,110 @@
         </nav>
       </header>
       <main class="main">
-        <section class="hero">
-          <h1 class="hero__title">Милые штуки <br>ручной <br>работы для дома</h1>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <a class="hero__link">Предметы интерьера</a>
-            </li>
-            <li class="hero__item">
-              <a class="hero__link">Детские игрушки</a>
-            </li>
-          </ul>
-        </section>
-        <section class="product">
-          <h2 class="product__title">Вязаные корзинки</h2>
-          <p class="product__top">ТОВАР НЕДЕЛИ</p>
-          <p class="product__description">Экологически чистая пряжа,ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <table class="product__table">
-            <tr class="product__row">
-              <td class="product__column">Цвет:</td>
-              <td class="product__column">тиффани/серый</td>
-            </tr>
-            <tr class="product__row">
-              <td class="product__column">Диаметр:</td>
-              <td class="product__column">25 см</td>
-            </tr>
-            <tr class="product__row">
-              <td class="product__column">Высота:</td>
-              <td class="product__column">15 см</td>
-            </tr>
-          </table>
-          <img class="product__image" src="./img/background/background_basket.jpg" alt="Корзинки." width="260" height="315">
-          <p class="product__price">Цена: 990 руб.</p>
-          <button class="product__button" type="submit">ЗАКАЗАТЬ</button>
-          <img class="product__divider divider" src="./img/background/zigzag.png" alt="Разделительная линия.">
-        </section>
-        <section class="information">
-          <h2 class="information__title">Коротко о нас:</h2>
-          <ul class="information__list">
-            <li class="information__item">Экологически чистые материалы</li>
-            <li class="information__item">Скандинавский стиль по российской цене</li>
-            <li class="information__item">Увеличивает лайки на фотографиях</li>
-            <li class="information__item">Связано вручную с любовью и умилением</li>
-            <li class="information__item">Поддержка отечественного производителя</li>
-            <li class="information__item">Поставляется в подарочной упаковке</li>
-          </ul>
-        </section>
-        <section class="reviews">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__slider">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <div class="reviews__client client">
-              <p class="client__name">Анастасия Красильникова</p>
-              <a class="client__link" href="#">@misssssiskras</a>
-            </div>
-            <div class="reviews__buttons">
-              <div class="reviews__chevrons chevron">
-                <button class="chevron__item left">
-                  <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Предыдущий.</span>
-                </button>
-                <button class="chevron__item right">
-                  <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Следующий.</span>
-                </button>
+        <section class="form">
+          <h1 class="form__title">Вязание на заказ</h1>
+          <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
+          и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <form class="form__container details" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="details__type type">
+              <h2 class="type__title">ТИП</h2>
+              <ul class="type__list">
+                <li class="type__item product">
+                  <label class="product__container">
+                    <input class="product__input" type="radio" name="product-group" value="product-type" checked>
+                    <span class="product__title">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="type__item product">
+                  <label class="product__container">
+                    <input class="product__input" type="radio" name="product-group" value="product-type">
+                    <span class="product__title">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="details__colors colors">
+              <h2 class="colors__title">ЦВЕТ</h2>
+              <ul class="colors__list">
+                <li class="colors__item palette">
+                  <label class="palette__container" for="color-white">
+                    <input class="palette__input" type="checkbox" id="color-white" name="color[]" value="white" checked>
+                    <span class="palette__title">Белый</span>
+                  </label>
+                </li>
+                <li class="colors__item palette">
+                  <label class="palette__container" for="color-gray">
+                    <input class="palette__input" type="checkbox" id="color-gray" name="color[]" value="gray" checked>
+                    <span class="palette__title">Серый</span>
+                  </label>
+                </li>
+                <li class="colors__item palette">
+                  <label class="palette__container" for="color-tiffany">
+                    <input class="palette__input" type="checkbox" id="color-tiffany" name="color[]" value="tiffany">
+                    <span class="palette__title">Тиффани</span>
+                  </label>
+                </li>
+                <li class="colors__item palette">
+                  <label class="palette__container" for="color-black">
+                    <input class="palette__input" type="checkbox" id="color-black" name="color[]" value="black">
+                    <span class="palette__title">Черный</span>
+                  </label>
+                </li>
+                <li class="colors__item palette">
+                  <label class="palette__container" for="color-pink">
+                    <input class="palette__input" type="checkbox" id="color-pink" name="color[]" value="pink">
+                    <span class="palette__title">Розовый</span>
+                  </label>
+                </li>
+                <li class="colors__item palette">
+                  <label class="palette__container" for="color-orange">
+                    <input class="palette__input" type="checkbox" id="color-orange" name="color[]" value="orange">
+                    <span class="palette__title">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="details__name name">
+              <h2 class="name__title">ФИО</h2>
+              <div class="name__container">
+                <label class="name__title" for="name">Имя:</label>
+                <input class="name__input" type="text" id="name" placeholder="Введите ваше имя*" required>
               </div>
-              <button class="reviews__send">Написать</button>
+              <div>
+                <label class="name__title" for="surname">Фамилия:</label>
+                <input class="name__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+              </div>
+              <div>
+                <label class="name__title" for="patronymic">Отчество:</label>
+                <input class="name__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+              </div>
             </div>
-          </div>
-          <img class="reviews__divider divider" src="./img/background/zigzag.png" alt="Разделительная линия.">
-        </section>
-        <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table">
-            <tr class="contacts__row">
-              <td class="contacts__column">e-mail:</td>
-              <td class="contacts__column">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="contacts__row">
-              <td class="contacts__column">адрес:</td>
-              <td class="contacts__column">г. Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</td>
-            </tr>
-          </table>
-          <img class="contacts__map" src="./img/background/background_map.jpg" alt="Местонахождение на карте." width="320" height="454">
-          <button class="contacts__button" type="submit">НАПИШИТЕ НАМ</button>
+            <div class="details__telephone telephone">
+              <h2 class="telephone__title">ТЕЛ</h2>
+              <div class="telephone__container">
+                <label class="visually-hidden" for="tel">Номер телефона.</label>
+                <input class="telephone__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                required>
+              </div>
+            </div>
+            <div class="details__mail mail">
+              <h2 class="mail__title">E-MAIL</h2>
+              <div class="mail__container">
+                <label class="visually-hidden" for="e-mail">Ваш Email.</label>
+                <input class="mail__input" type="email" id="e-mail" placeholder="Ваш Email*" required>
+              </div>
+            </div>
+            <div class="details__additionally additionally">
+              <h2 class="additionally__title">ДОП</h2>
+              <div class="additionally__container">
+                <label class="visually-hidden" for="comment">Комментарий.</label>
+                <textarea class="additionally__input" name="text" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </div>
+            <p class="details__description">*Поля обязательны для заполнения</p>
+            <button class="details__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+          </form>
         </section>
       </main>
       <footer class="footer">
