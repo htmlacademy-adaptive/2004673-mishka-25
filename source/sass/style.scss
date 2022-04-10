@@ -1,21 +1,14 @@
-@import "./blocks/popover.scss";
-@import "./blocks/modal.scss";
-@import "./blocks/base.scss";
-@import "./blocks/header.scss";
-@import "./blocks/footer.scss";
-
-//index//
-
-@import "./blocks/hero.scss";
-@import "./blocks/product.scss";
-@import "./blocks/information.scss";
-@import "./blocks/reviews.scss";
-@import "./blocks/contacts.scss";
-
-//catalog//
-
-@import "./blocks/catalog.scss";
-@import "./blocks/video.scss";
-
-//form//
-@import "./blocks/form.scss";
+// Начните писать стили здесь
+@import "../sass/blocks/base.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/hero.scss";
+@import "../sass/blocks/information.scss";
+@import "../sass/blocks/modal.scss";
+@import "../sass/blocks/popover.scss";
+@import "../sass/blocks/product.scss";
+@import "../sass/blocks/reviews.scss";
+@import "../sass/blocks/video.scss";

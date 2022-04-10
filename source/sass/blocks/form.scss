@@ -10,7 +10,7 @@
     justify-self: center;
     align-self: center;
     margin: 0 auto;
-    font-family: "Open Sans";
+    //font-family: "Open Sans";//
     font-style: normal;
     font-weight: 700;
     font-size: 27px;
@@ -20,7 +20,7 @@
 
   &__description {
     margin: 17px 30px 29px 30px;
-    font-family: "Open Sans";
+    //font-family: "Open Sans";//
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -52,7 +52,7 @@
 
   &__description {
     margin-bottom: 30px;
-    font-family: "Open Sans";
+    //font-family: "Open Sans";//
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -66,13 +66,12 @@
     border: 2px solid #444444;
     padding: 18px 37px;
     text-transform: uppercase;
-    font-family: "Open Sans";
+    //font-family: "Open Sans";//
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
     line-height: 16px;
     color: #444444;
-    text-transform: uppercase;
   }
 }
 
@@ -88,7 +87,7 @@
 .telephone__title,
 .mail__title,
 .additionally__title {
-  font-family: "Open Sans";
+  //font-family: "Open Sans";//
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -100,7 +99,7 @@
 .product__title,
 .palette__title,
 .chapter__title {
-  font-family: "Open Sans";
+  //font-family: "Open Sans";//
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
