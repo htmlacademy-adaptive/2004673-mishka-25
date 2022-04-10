@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0;
+
+  &__logo {
+    margin-left: 116px;
+    margin-right: 67px;
+  }
+
+  &__menu {
+    margin-right: 23px;
+    padding: 10px;
+  }
+}

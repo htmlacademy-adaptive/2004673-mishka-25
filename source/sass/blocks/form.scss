@@ -1,0 +1,109 @@
+.form {
+  &__hero {
+    background-color: #f1f1f1;
+    min-width: 320px;
+    min-height: 177px;
+    display: flex;
+  }
+
+  &__title {
+    justify-self: center;
+    align-self: center;
+    margin: 0 auto;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__description {
+    margin: 17px 30px 29px 30px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+.details {
+  margin: 0 30px 55px 30px;
+
+  &__type {
+    margin-bottom: 31px;
+  }
+
+  &__colors {
+    margin-bottom: 33px;
+  }
+
+  &__name,
+  &__telephone,
+  &__mail {
+    margin-bottom: 34px;
+  }
+
+  &__additionally {
+    margin-bottom: 17px;
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  &__button {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid #444444;
+    padding: 18px 37px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    color: #444444;
+    text-transform: uppercase;
+  }
+}
+
+
+.product,
+.palette {
+  list-style-type: none;
+}
+
+.type__title,
+.colors__title,
+.name__title,
+.telephone__title,
+.mail__title,
+.additionally__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.product__title,
+.palette__title,
+.chapter__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+}

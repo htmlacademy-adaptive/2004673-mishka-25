@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="container">
@@ -32,10 +31,10 @@
                     <a class="popover__link" href="./form.html">Вязание на заказ</a>
                   </li>
                   <li class="popover__item">
-                    <button class="popover__link" type="submit">Поиск по сайту</button>
+                    <a class="popover__link" href="#">Поиск по сайту</a>
                   </li>
                   <li class="popover__item">
-                    <button class="popover__link" type="submit">Корзина: пока пуста</button>
+                    <a class="popover__link" href="#">Корзина: пока пуста</a>
                   </li>
                 </ul>
               </div>
@@ -45,12 +44,14 @@
       </header>
       <main class="main">
         <section class="form">
-          <h1 class="form__title">Вязание на заказ</h1>
-          <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа
-          и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <div class="form__hero">
+            <h1 class="form__title">Вязание на заказ</h1>
+          </div>
+          <p class="form__description">Мы будем рады воплотить в жизнь<br> ваши пожелания! Заполните простую<br> форму
+          заказа и мы свяжемся с вами,<br> чтобы уточнить детали.</p>
           <form class="form__container details" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="details__type type">
-              <h2 class="type__title">ТИП</h2>
+              <h2 class="type__title">Тип</h2>
               <ul class="type__list">
                 <li class="type__item product">
                   <label class="product__container">
@@ -67,7 +68,7 @@
               </ul>
             </fieldset>
             <fieldset class="details__colors colors">
-              <h2 class="colors__title">ЦВЕТ</h2>
+              <h2 class="colors__title">Цвет</h2>
               <ul class="colors__list">
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-white">
@@ -109,21 +110,21 @@
             </fieldset>
             <div class="details__name name">
               <h2 class="name__title">ФИО</h2>
-              <div class="name__container">
-                <label class="name__title" for="name">Имя:</label>
-                <input class="name__input" type="text" id="name" placeholder="Введите ваше имя*" required>
+              <div class="name__container chapter">
+                <label class="chapter__title" for="name">Имя:</label>
+                <input class="chapter__input" type="text" id="name" placeholder="Введите ваше имя*" required>
               </div>
               <div>
-                <label class="name__title" for="surname">Фамилия:</label>
-                <input class="name__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+                <label class="chapter__title" for="surname">Фамилия:</label>
+                <input class="chapter__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
               </div>
               <div>
-                <label class="name__title" for="patronymic">Отчество:</label>
-                <input class="name__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+                <label class="chapter__title" for="patronymic">Отчество:</label>
+                <input class="chapter__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
               </div>
             </div>
             <div class="details__telephone telephone">
-              <h2 class="telephone__title">ТЕЛ</h2>
+              <h2 class="telephone__title">Тел</h2>
               <div class="telephone__container">
                 <label class="visually-hidden" for="tel">Номер телефона.</label>
                 <input class="telephone__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
@@ -132,21 +133,21 @@
               </div>
             </div>
             <div class="details__mail mail">
-              <h2 class="mail__title">E-MAIL</h2>
+              <h2 class="mail__title">E-mail</h2>
               <div class="mail__container">
                 <label class="visually-hidden" for="e-mail">Ваш Email.</label>
                 <input class="mail__input" type="email" id="e-mail" placeholder="Ваш Email*" required>
               </div>
             </div>
             <div class="details__additionally additionally">
-              <h2 class="additionally__title">ДОП</h2>
+              <h2 class="additionally__title">Доп</h2>
               <div class="additionally__container">
                 <label class="visually-hidden" for="comment">Комментарий.</label>
                 <textarea class="additionally__input" name="text" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </div>
             <p class="details__description">*Поля обязательны для заполнения</p>
-            <button class="details__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+            <button class="details__button" type="submit">Отправить заказ</button>
           </form>
         </section>
       </main>
@@ -183,21 +184,6 @@
           <img class="author__link" src="./img/social/htmlacademy_icon.svg" alt="htmlacademy.">
         </div>
       </footer>
-      <div class="modal modal-close">
-        <h2 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h2>
-        <form class="modal__form form" action="https://echo.htmlacademy.ru" method="get">
-          <p class="form__description">Выберите размер:</p>
-          <div class="form__container sizes">
-            <label class="sizes__name" for="choose-s">S</label>
-            <input class="sizes__input" type="radio" name="s" id="choose-s">
-            <label class="sizes__name" for="choose-m">M</label>
-            <input class="sizes__input" type="radio" name="m" id="choose-m">
-            <label class="sizes__name" for="choose-l">L</label>
-            <input class="sizes__input" type="radio" name="l" id="choose-l">
-          </div>
-        <button class="form__button" type="submit">Добавить</button>
-        </form>
-      </div>
     </div>
   </body>
 </html>

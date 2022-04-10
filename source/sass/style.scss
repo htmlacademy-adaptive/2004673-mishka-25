@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+@import "./blocks/popover.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/base.scss";
+@import "./blocks/header.scss";
+@import "./blocks/footer.scss";
+
+//index//
+
+@import "./blocks/hero.scss";
+@import "./blocks/product.scss";
+@import "./blocks/information.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
+
+//catalog//
+
+@import "./blocks/catalog.scss";
+@import "./blocks/video.scss";
+
+//form//
+@import "./blocks/form.scss";
