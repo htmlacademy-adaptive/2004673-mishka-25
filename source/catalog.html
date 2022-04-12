@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="container">
@@ -45,58 +44,69 @@
       </header>
       <main class="main">
         <section class="catalog">
-          <h1 class="catalog__title">Каталог товаров</h1>
+          <div class="catalog__hero">
+            <h1 class="catalog__title">Каталог товаров</h1>
+          </div>
           <ul class="catalog__list">
-            <li class="catalog__item product">
-              <img class="product__image" src="./img/catalog/bunny.jpg" alt="Зайчик-попрыгайчик.">
-              <h2 class="product__title">Зайчик-попрыгайчик</h2>
-              <p class="product__description">Рост 30 см, вес 200 г</p>
-              <div class="product__pricelist pricelist">
-                <p class="pricelist__price">1 200 руб.</p>
-                <button class="pricelist__button" type="submit">
-                  <svg class="pricelist__image" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Купить.</span>
-                </button>
+            <li class="catalog__item ware">
+              <img class="ware__image" src="./img/catalog/bunny.jpg" alt="Зайчик-попрыгайчик.">
+              <div class="ware__text item">
+                <h2 class="item__title">Зайчик-попрыгайчик</h2>
+                <p class="item__description">Рост 30 см, вес 200 г</p>
+                <hr class="item__hr">
+                <div class="item__pricelist pricelist">
+                  <p class="pricelist__price">1 200 руб.</p>
+                  <button class="pricelist__button" type="submit">
+                    <svg class="pricelist__image" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Купить.</span>
+                  </button>
+                </div>
               </div>
             </li>
-            <li class="catalog__item product">
-              <img class="product__image" src="./img/catalog/laundry_basket.jpg" alt="Корзинка для белья.">
-              <h2 class="product__title">Корзинка для белья</h2>
-              <p class="product__description">Диаметр 15 см, высота 10 см</p>
-              <div class="product__pricelist pricelist">
-                <p class="pricelist__price">690 руб.</p>
-                <button class="pricelist__button" type="submit">
-                  <svg class="pricelist__image" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Купить.</span>
-                </button>
+            <li class="catalog__item ware">
+              <img class="ware__image" src="./img/catalog/laundry_basket.jpg" alt="Корзинка для белья.">
+              <div class="ware__text item">
+                <h2 class="item__title">Корзинка для белья</h2>
+                <p class="item__description">Диаметр 15 см, высота 10 см</p>
+                <hr class="item__hr">
+                <div class="item__pricelist pricelist">
+                  <p class="pricelist__price">690 руб.</p>
+                  <button class="pricelist__button" type="submit">
+                    <svg class="pricelist__image" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Купить.</span>
+                  </button>
+                </div>
               </div>
             </li>
-            <li class="catalog__item product">
-              <img class="product__image" src="./img/catalog/toy_basket.jpg" alt="Большая корзинка для игрушек.">
-              <h2 class="product__title">Большая корзинка для игрушек</h2>
-              <p class="product__description">Диаметр 30 см, высота 30 см</p>
-              <div class="product__pricelist pricelist">
-                <p class="pricelist__price">1 500 руб.</p>
-                <button class="pricelist__button" type="submit">
-                  <svg class="pricelist__image" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Купить.</span>
-                </button>
+            <li class="catalog__item ware">
+              <img class="ware__image" src="./img/catalog/toy_basket.jpg" alt="Большая корзинка для игрушек.">
+              <div class="ware__text item">
+                <h2 class="item__title">Большая корзинка<br> для игрушек</h2>
+                <p class="item__description">Диаметр 30 см, высота 30 см</p>
+                <hr class="item__hr">
+                <div class="item__pricelist pricelist">
+                  <p class="pricelist__price">1 500 руб.</p>
+                  <button class="pricelist__button" type="submit">
+                    <svg class="pricelist__image" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Купить.</span>
+                  </button>
+                </div>
               </div>
             </li>
           </ul>
         </section>
         <section class="video">
           <h2 class="video__title">Процесс производства</h2>
-          <img class="video__image" src="./img/background/video.png" alt="Заставка к видео.">
-          <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары.</p>
-          <button class="video__button" type="submit">СДелать заказ</button>
+          <img class="video__image" src="./img/background/video_screensaver.jpg" alt="Видео." width="260" height="150">
+          <p class="video__description">По просьбам наших любимых<br> фолловеров мы сняли для вас<br> подробное видео
+          о том, как<br> появляются наши товары.</p>
+          <button class="video__button" type="submit">Сделать заказ</button>
         </section>
       </main>
       <footer class="footer">
@@ -133,10 +143,10 @@
         </div>
       </footer>
       <div class="modal modal-close">
-        <h2 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h2>
-        <form class="modal__form form" action="https://echo.htmlacademy.ru" method="get">
-          <p class="form__description">Выберите размер:</p>
-          <div class="form__container sizes">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <form class="modal__choice choice" action="https://echo.htmlacademy.ru" method="get">
+          <p class="choice__description">Выберите размер:</p>
+          <div class="choice__container sizes">
             <label class="sizes__name" for="choose-s">S</label>
             <input class="sizes__input" type="radio" name="s" id="choose-s">
             <label class="sizes__name" for="choose-m">M</label>
@@ -144,7 +154,7 @@
             <label class="sizes__name" for="choose-l">L</label>
             <input class="sizes__input" type="radio" name="l" id="choose-l">
           </div>
-        <button class="form__button" type="submit">Добавить</button>
+        <button class="choice__button" type="submit">Добавить</button>
         </form>
       </div>
     </div>

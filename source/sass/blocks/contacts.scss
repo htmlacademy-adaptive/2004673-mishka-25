@@ -1,0 +1,43 @@
+.contacts {
+  margin: 38px 0 39px 0;
+
+  &__title {
+    margin: 0 30px 28px 30px;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__table {
+    margin: 0 30px 62px 30px;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #444444;
+  }
+
+  &__map {
+    margin-bottom: 41px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 30px;
+    background-color: #ffffff;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    padding: 16px 38px;
+    text-transform: uppercase;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #444444;
+  }
+}

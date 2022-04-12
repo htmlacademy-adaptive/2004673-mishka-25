@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div class="container">
@@ -32,10 +31,10 @@
                     <a class="popover__link" href="./form.html">Вязание на заказ</a>
                   </li>
                   <li class="popover__item">
-                    <button class="popover__link" type="submit">Поиск по сайту</button>
+                    <a class="popover__link" href="#">Поиск по сайту</a>
                   </li>
                   <li class="popover__item">
-                    <button class="popover__link" type="submit">Корзина: пока пуста</button>
+                    <a class="popover__link" href="#">Корзина: пока пуста</a>
                   </li>
                 </ul>
               </div>
@@ -58,7 +57,8 @@
         <section class="product">
           <h2 class="product__title">Вязаные корзинки</h2>
           <p class="product__top">ТОВАР НЕДЕЛИ</p>
-          <p class="product__description">Экологически чистая пряжа,ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+          <p class="product__description">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках
+          и трёх размерах.</p>
           <table class="product__table">
             <tr class="product__row">
               <td class="product__column">Цвет:</td>
@@ -130,7 +130,7 @@
             </tr>
           </table>
           <img class="contacts__map" src="./img/background/background_map.jpg" alt="Местонахождение на карте." width="320" height="454">
-          <button class="contacts__button" type="submit">НАПИШИТЕ НАМ</button>
+          <button class="contacts__button" type="submit">Напишите нам</button>
         </section>
       </main>
       <footer class="footer">
@@ -167,10 +167,10 @@
         </div>
       </footer>
       <div class="modal modal-close">
-        <h2 class="modal__title">ДОБАВИТЬ В КОРЗИНУ</h2>
-        <form class="modal__form form" action="https://echo.htmlacademy.ru" method="get">
-          <p class="form__description">Выберите размер:</p>
-          <div class="form__container sizes">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <form class="modal__choice choice" action="https://echo.htmlacademy.ru" method="get">
+          <p class="choice__description">Выберите размер:</p>
+          <div class="choice__container sizes">
             <label class="sizes__name" for="choose-s">S</label>
             <input class="sizes__input" type="radio" name="s" id="choose-s">
             <label class="sizes__name" for="choose-m">M</label>
@@ -178,7 +178,7 @@
             <label class="sizes__name" for="choose-l">L</label>
             <input class="sizes__input" type="radio" name="l" id="choose-l">
           </div>
-        <button class="form__button" type="submit">Добавить</button>
+        <button class="choice__button" type="submit">Добавить</button>
         </form>
       </div>
     </div>

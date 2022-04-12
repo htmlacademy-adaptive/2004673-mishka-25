@@ -1,0 +1,64 @@
+.product {
+  margin: 31px 30px 0 30px;
+
+  &__title {
+    margin-bottom: 3px;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__top {
+    margin-bottom: 17px;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #63d1bb;
+  }
+
+  &__description,
+  &__table {
+    margin-bottom: 28px;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  &__image {
+    margin-bottom: 25px;
+  }
+
+  &__price {
+    margin: 0 auto 24px auto;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #444444;
+    text-align: center;
+  }
+
+  &__button {
+    margin: 0 auto 36px auto;
+    background-color: #ffffff;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    padding: 16px 70px;
+    text-transform: uppercase;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #444444;
+  }
+}

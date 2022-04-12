@@ -1,0 +1,26 @@
+.information {
+  margin: 31px 30px 58px 30px;
+
+  &__title {
+    margin-bottom: 28px;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+  }
+}

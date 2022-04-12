@@ -1,0 +1,42 @@
+.video {
+  margin: 0 30px 58px 30px;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+
+  &__title {
+    margin: 21px 13px 26px 34px;
+    //font-family: "Open Sans";//
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  &__image {
+    margin-bottom: 35px;
+  }
+
+  &__description {
+    margin: 0 0 41px 34px;
+    //font-family: "Open Sans";//
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  &__button {
+    margin: 0 34px 33px 34px;
+    background-color: #ffffff;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    padding: 18px 11px;
+    text-transform: uppercase;
+    //font-family: "Open Sans";//
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: #444444;
+  }
+}
