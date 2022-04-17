@@ -1,19 +1,16 @@
 .popover {
   height: 395px;
   width: 320px;
+}
 
-  &__list {
-    list-style-type: none;
-  }
+.popover__list {
+  list-style-type: none;
+}
 
-  &__link {
-    background: #ffffff;
-    //font-family: "Open Sans";//
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    color: #000000;
-    text-decoration: none;
-  }
+.popover__link {
+  background: #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
 }

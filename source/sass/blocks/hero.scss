@@ -2,35 +2,59 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  background: url("../img/background/background-toy.jpg") no-repeat;
+  background: url("../img/background/background-hero.jpg") no-repeat;
+  background-size: cover;
+  object-fit: cover; // не могу разобраться//
+}
 
-  &__title {
-    margin: 73px auto 120px auto;
-    text-align: center;
-    //font-family: "Open Sans";//
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 30px;
-    color: #000000;
+.hero__title {
+  margin: 73px auto 120px auto;
+  width: 260px;
+  text-align: center;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+
+  @include tablet {
+    width: 568px;
+    margin: 109px auto 372px auto;
   }
 
-  &__item {
-    list-style-type: none;
-    width: 130px;
-  }
-
-  &__item:first-child {
-    background-color: #63d1bb;
-  }
-
-  &__item:last-child {
-    background-color: #56c3b2;
-  }
-
-  &__link {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 24px;
-    color: #ffffff;
+  @include desktop {
+    width: 700px;
+    margin: 113px auto 355px auto;
   }
 }
+
+.hero__list {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.hero__item {
+  list-style-type: none;
+  width: 130px;
+}
+
+.hero__item:first-child {
+  background-color: #63d1bb;
+}
+
+.hero__item:last-child {
+  background-color: #56c3b2;
+}
+
+.hero__link {
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+}
+

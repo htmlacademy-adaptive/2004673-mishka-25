@@ -1,0 +1,102 @@
+.navigation {
+  display: flex;
+  height: 79px;
+
+  @include tablet {
+    height: 89px;
+
+    .menu__button {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    height: 89px;
+
+    .menu__button {
+      display: none;
+    }
+  }
+}
+
+.menu__link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.menu__links,
+.menu__buttons {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.navigation__logo {
+
+  @include tablet {
+    order: 1;
+  }
+
+  @include desktop { //не знаю, как поставить в середину//
+    position: absolute;
+    order: 2;
+  }
+
+}
+
+.navigation__menu {
+
+  @include tablet {
+    order: 2;
+  }
+
+  @include desktop {
+    order: 1;
+  }
+
+}
+
+.menu__links {
+
+  @include tablet {
+    order: 3;
+  }
+
+  @include desktop {
+    order: 1;
+  }
+}
+
+.menu__buttons {
+
+  @include tablet {
+    order: 2;
+  }
+
+  @include desktop {
+    order: 2;
+  }
+}
+
