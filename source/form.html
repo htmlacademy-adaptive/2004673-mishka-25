@@ -13,31 +13,31 @@
             <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="86" height="35">
           </a>
           <div class="navigation__menu menu">
-            <a class="menu__link" href="#">
+            <button class="menu__button">
               <svg class="menu__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
                 <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
                 <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
               </svg>
               <span class="visually-hidden">Меню.</span>
-            </a>
-            <div class="menu__popover popover popover-close">
-              <div class="popover__content">
-                <ul class="popover__list">
-                  <li class="popover__item">
-                    <a class="popover__link" href="./catalog.html">Каталог товаров</a>
-                  </li>
-                  <li class="popover__item">
-                    <a class="popover__link" href="./form.html">Вязание на заказ</a>
-                  </li>
-                  <li class="popover__item">
-                    <a class="popover__link" href="#">Поиск по сайту</a>
-                  </li>
-                  <li class="popover__item">
-                    <a class="popover__link" href="#">Корзина: пока пуста</a>
-                  </li>
-                </ul>
-              </div>
+            </button>
+            <div class="menu__wrapper">
+              <ul class="menu__links">
+                <li class="menu__item">
+                  <a class="menu__link" href="./catalog.html">Каталог товаров</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./form.html">Вязание на заказ</a>
+                </li>
+              </ul>
+              <ul class="menu__buttons">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Поиск по сайту</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Корзина: пока пуста</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>

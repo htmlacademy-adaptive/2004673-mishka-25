@@ -1,14 +1,26 @@
-// Начните писать стили здесь
-@import "../sass/blocks/base.scss";
+//common//
+@import "../sass/blocks/mixins.scss";
+@import "../sass/blocks/condition.scss";
+@import "../sass/blocks/font-face.scss";
+@import "../sass/base.scss";
+@import "../sass/blocks/popover.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/menu.scss";
+@import "../sass/blocks/footer.scss";
+
+//catalog//
 @import "../sass/blocks/catalog.scss";
 @import "../sass/blocks/contacts.scss";
-@import "../sass/blocks/footer.scss";
+
+//form//
 @import "../sass/blocks/form.scss";
-@import "../sass/blocks/header.scss";
+
+//index//
+
 @import "../sass/blocks/hero.scss";
 @import "../sass/blocks/information.scss";
 @import "../sass/blocks/modal.scss";
-@import "../sass/blocks/popover.scss";
 @import "../sass/blocks/product.scss";
 @import "../sass/blocks/reviews.scss";
 @import "../sass/blocks/video.scss";
+@import "../sass/blocks/contacts.scss";

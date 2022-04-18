@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mishka</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -13,38 +14,38 @@
             <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="86" height="35">
           </a>
           <div class="navigation__menu menu">
-            <a class="menu__link" href="#">
+            <button class="menu__button">
               <svg class="menu__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
                 <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
                 <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
               </svg>
               <span class="visually-hidden">Меню.</span>
-            </a>
-            <div class="menu__popover popover popover-close">
-              <div class="popover__content">
-                <ul class="popover__list">
-                  <li class="popover__item">
-                    <a class="popover__link" href="./catalog.html">Каталог товаров</a>
-                  </li>
-                  <li class="popover__item">
-                    <a class="popover__link" href="./form.html">Вязание на заказ</a>
-                  </li>
-                  <li class="popover__item">
-                    <a class="popover__link" href="#">Поиск по сайту</a>
-                  </li>
-                  <li class="popover__item">
-                    <a class="popover__link" href="#">Корзина: пока пуста</a>
-                  </li>
-                </ul>
-              </div>
+            </button>
+            <div class="menu__wrapper">
+              <ul class="menu__links">
+                <li class="menu__item">
+                  <a class="menu__link" href="./catalog.html">Каталог товаров</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="./form.html">Вязание на заказ</a>
+                </li>
+              </ul>
+              <ul class="menu__buttons">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Поиск по сайту</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Корзина: пока пуста</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
       </header>
       <main class="main">
         <section class="hero">
-          <h1 class="hero__title">Милые штуки <br>ручной <br>работы для дома</h1>
+          <h1 class="hero__title">Милые штуки ручной работы для дома</h1>
           <ul class="hero__list">
             <li class="hero__item">
               <a class="hero__link">Предметы интерьера</a>
@@ -55,8 +56,10 @@
           </ul>
         </section>
         <section class="product">
-          <h2 class="product__title">Вязаные корзинки</h2>
-          <p class="product__top">ТОВАР НЕДЕЛИ</p>
+          <div class="product__container">
+            <h2 class="product__title">Вязаные корзинки</h2>
+            <p class="product__top">ТОВАР НЕДЕЛИ</p>
+          </div>
           <p class="product__description">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках
           и трёх размерах.</p>
           <table class="product__table">
@@ -73,7 +76,7 @@
               <td class="product__column">15 см</td>
             </tr>
           </table>
-          <img class="product__image" src="./img/background/background_basket.jpg" alt="Корзинки." width="260" height="315">
+          <img class="product__image" src="./img/background/background-basket.jpg" alt="Корзинки." width="260" height="315">
           <p class="product__price">Цена: 990 руб.</p>
           <button class="product__button" type="submit">ЗАКАЗАТЬ</button>
           <img class="product__divider divider" src="./img/background/zigzag.png" alt="Разделительная линия.">
@@ -81,21 +84,41 @@
         <section class="information">
           <h2 class="information__title">Коротко о нас:</h2>
           <ul class="information__list">
-            <li class="information__item">Экологически чистые материалы</li>
-            <li class="information__item">Скандинавский стиль по российской цене</li>
-            <li class="information__item">Увеличивает лайки на фотографиях</li>
-            <li class="information__item">Связано вручную с любовью и умилением</li>
-            <li class="information__item">Поддержка отечественного производителя</li>
-            <li class="information__item">Поставляется в подарочной упаковке</li>
+            <li class="information__item">
+              <img src="./img/background/flower.png" alt="Цветок.">
+              <p>Экологически чистые материалы</p>
+            </li>
+            <li class="information__item">
+              <img src="./img/background/money.png" alt="Банкнота.">
+              <p>Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="information__item">
+              <img src="./img/background/heart.png" alt="Сердце.">
+              <p>Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="information__item">
+              <img src="./img/background/ball.png" alt="Клубок.">
+              <p>Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="information__item">
+              <img src="./img/background/rocket.png" alt="Ракета.">
+              <p>Поддержка отечественного производителя</p>
+            </li>
+            <li class="information__item">
+              <img src="./img/background/present.png" alt="Подарок.">
+              <p>Поставляется в подарочной упаковке</p>
+            </li>
           </ul>
         </section>
         <section class="reviews">
           <h2 class="reviews__title">Отзывы</h2>
           <div class="reviews__slider">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <div class="reviews__client client">
-              <p class="client__name">Анастасия Красильникова</p>
-              <a class="client__link" href="#">@misssssiskras</a>
+            <div class="reviews__container">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <div class="reviews__client client">
+                <p class="client__name">Анастасия Красильникова</p>
+                <a class="client__link" href="#">@misssssiskras</a>
+              </div>
             </div>
             <div class="reviews__buttons">
               <div class="reviews__chevrons chevron">
@@ -119,21 +142,24 @@
         </section>
         <section class="contacts">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__table">
-            <tr class="contacts__row">
-              <td class="contacts__column">e-mail:</td>
-              <td class="contacts__column">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="contacts__row">
-              <td class="contacts__column">адрес:</td>
-              <td class="contacts__column">г. Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</td>
-            </tr>
-          </table>
-          <img class="contacts__map" src="./img/background/background_map.jpg" alt="Местонахождение на карте." width="320" height="454">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__name">e-mail:</p>
+              <p class="contacts__description">info@mimimishkashop.ru</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__name">адрес:</p>
+              <p class="contacts__description">г. Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</p>
+            </li>
+          </ul>
+          <img class="contacts__map" src="./img/background/background-map.jpg" alt="Местонахождение на карте." width="320" height="454">
           <button class="contacts__button" type="submit">Напишите нам</button>
         </section>
       </main>
       <footer class="footer">
+        <a class="footer__logo logo" href="./index.html">
+          <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="101" height="34">
+        </a>
         <ul class="footer__links socials">
           <li class="socials__item">
             <a class="socials__link vk" href="https://vk.com/htmlacademy">

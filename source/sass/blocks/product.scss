@@ -1,64 +1,92 @@
 .product {
   margin: 31px 30px 0 30px;
+}
 
-  &__title {
-    margin-bottom: 3px;
-    //font-family: "Open Sans";//
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
-    color: #000000;
+.product__container {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
   }
 
-  &__top {
-    margin-bottom: 17px;
-    //font-family: "Open Sans";//
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    color: #63d1bb;
-  }
-
-  &__description,
-  &__table {
-    margin-bottom: 28px;
-    //font-family: "Open Sans";//
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #444444;
-  }
-
-  &__image {
-    margin-bottom: 25px;
-  }
-
-  &__price {
-    margin: 0 auto 24px auto;
-    //font-family: "Open Sans";//
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    color: #444444;
-    text-align: center;
-  }
-
-  &__button {
-    margin: 0 auto 36px auto;
-    background-color: #ffffff;
-    border: 2px solid #444444;
-    box-sizing: border-box;
-    padding: 16px 70px;
-    text-transform: uppercase;
-    //font-family: "Open Sans";//
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    color: #444444;
+  @include desktop {
+    flex-direction: row;
   }
 }
+
+.product__title {
+  margin-bottom: 3px;
+  //font-family: "Open Sans";//
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+
+  @include tablet {
+    order: 1
+  }
+
+  @include desktop {
+    order: 2;
+  }
+}
+
+.product__top {
+  margin-bottom: 17px;
+  //font-family: "Open Sans";//
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+
+  @include tablet {
+    order: 2
+  }
+
+  @include desktop {
+    order: 1;
+  }
+}
+
+.product__description,
+.product__table {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.product__image {
+  margin-bottom: 25px;
+
+  @include tablet {
+    flex-direction: row; //подумать//
+  }
+}
+
+.product__price {
+  margin: 0 auto 24px auto;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  text-align: center;
+}
+
+.product__button {
+  margin: 0 auto 36px auto;
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  padding: 16px 70px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+}
+
