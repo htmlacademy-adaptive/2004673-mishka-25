@@ -1,0 +1,16 @@
+.type {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}

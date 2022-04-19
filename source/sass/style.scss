@@ -14,13 +14,23 @@
 
 //form//
 @import "../sass/blocks/form.scss";
+@import "../sass/blocks/form-type.scss";
+@import "../sass/blocks/form-colors.scss";
+@import "../sass/blocks/form-name.scss";
+@import "../sass/blocks/form-contacts.scss";
+@import "../sass/blocks/form-additionally.scss";
 
 //index//
 
 @import "../sass/blocks/hero.scss";
 @import "../sass/blocks/information.scss";
-@import "../sass/blocks/modal.scss";
 @import "../sass/blocks/product.scss";
 @import "../sass/blocks/reviews.scss";
+@import "../sass/blocks/reviews-client.scss";
+@import "../sass/blocks/reviews-chevron.scss";
 @import "../sass/blocks/video.scss";
-@import "../sass/blocks/contacts.scss";
+
+//modal//
+@import "../sass/blocks/modal.scss";
+@import "../sass/blocks/modal-sizes.scss";
+@import "../sass/blocks/modal-choice.scss";

@@ -54,20 +54,17 @@
 }
 
 .navigation__logo {
-
   @include tablet {
     order: 1;
   }
 
-  @include desktop { //не знаю, как поставить в середину//
+  @include desktop { //!!!!!!не знаю, как поставить logo в середину между ul при desktop!!!!!//
     position: absolute;
     order: 2;
   }
-
 }
 
 .navigation__menu {
-
   @include tablet {
     order: 2;
   }
@@ -75,11 +72,9 @@
   @include desktop {
     order: 1;
   }
-
 }
 
 .menu__links {
-
   @include tablet {
     order: 3;
   }
@@ -90,7 +85,6 @@
 }
 
 .menu__buttons {
-
   @include tablet {
     order: 2;
   }
@@ -99,4 +93,3 @@
     order: 2;
   }
 }
-

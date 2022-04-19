@@ -2,7 +2,21 @@
   margin: 0 30px 58px 30px;
   border: 1px solid #ececec;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+
+  @include tablet {
+    flex-direction: column;
+    width: 668px;
+  }
+
+  @include desktop {
+    width: 1050px;
+    flex-direction: row;
+  }
 }
+
 .video__title {
   margin: 21px 13px 26px 34px;
   font-weight: 700;
@@ -13,6 +27,14 @@
 
 .video__image {
   margin-bottom: 35px;
+
+  @include tablet {
+    order: -1;
+  }
+
+  @include desktop {
+    order: -1;
+  }
 }
 
 .video__description {

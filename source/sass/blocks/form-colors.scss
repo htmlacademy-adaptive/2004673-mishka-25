@@ -1,0 +1,39 @@
+.colors {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 33px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  @include tablet {
+    flex-direction: row;
+    background-color: #f1f1f1;
+  }
+
+  @include desktop {
+    flex-direction: row;
+    background-color: #f1f1f1;
+  }
+}
+
+.colors__list {
+  list-style-type: none;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 249px 263px;
+    grid-template-rows: 52px 52px 52px;
+    column-gap: 14px;
+    row-gap: 24px;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 249px 249px 304px;
+    grid-template-rows: 52px 52px;
+    column-gap: 14px;
+    row-gap: 24px;
+  }
+}

@@ -1,0 +1,10 @@
+.chevron__item {
+  background-color: #ffffff;
+  border: 2px solid #ececec;
+  box-sizing: border-box;
+  padding: 13px 42px 13px 38px;
+}
+
+.chevron__item:first-child {
+  margin-right: -6px;
+}
