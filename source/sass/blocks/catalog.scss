@@ -18,11 +18,42 @@
 .catalog__list {
   margin: 30px;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    width: 669px;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    gap: 51px;
+  }
 }
 
 .ware {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
+  width: 260px;
   margin-bottom: 30px;
+
+  @include tablet {
+    width: 669px;
+    flex-direction: row;
+    margin-bottom: 54px;
+  }
+
+  @include desktop {
+    width: 316px;
+    flex-direction: column;
+  }
+}
+
+.ware:last-child {
+  margin-bottom: 0;
 }
 
 .item {
@@ -65,4 +96,3 @@
   line-height: 24px;
   color: #000000;
 }
-

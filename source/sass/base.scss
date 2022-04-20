@@ -5,15 +5,15 @@
 }
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
   background-color: #ffffff;
 
   @include desktop {
-    max-width: 1180px;
+    min-width: 1180px;
   }
 
   @include tablet {
-    max-width: 768px;
+    min-width: 768px;
   }
 }
 

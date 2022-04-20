@@ -17,32 +17,40 @@
 
 .form__description {
   margin: 17px 30px 29px 30px;
+  width: 260px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+
+  @include tablet {
+    margin: 54px auto 63px auto;
+    width: 668px;
+  }
+
+  @include desktop {
+    margin: 98px auto 63px auto;
+    width: 702px;
+  }
 }
 
 .details {
   margin: 0 30px 55px 30px;
 }
 
-.details__type {
-  margin-bottom: 31px;
-}
+.details__box {
+  display: flex;
+  flex-direction: column;
 
-.details__colors {
-  margin-bottom: 33px;
-}
+  @include tablet {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
-.details__name,
-.details__telephone,
-.details__mail {
-  margin-bottom: 34px;
-}
-
-.details__additionally {
-  margin-bottom: 17px;
+  @include desktop {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .details__description {
@@ -63,32 +71,4 @@
   font-size: 17px;
   line-height: 16px;
   color: #444444;
-}
-
-
-.product,
-.palette {
-  list-style-type: none;
-}
-
-.type__title,
-.colors__title,
-.name__title,
-.telephone__title,
-.mail__title,
-.additionally__title {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
-  color: #63d1bb;
-  text-transform: uppercase;
-}
-
-.product__title,
-.palette__title,
-.chapter__title {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
 }
