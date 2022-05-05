@@ -1,9 +1,9 @@
 .video {
   display: grid;
   grid-template-areas:
-    'video__box-title'
-    'video__image'
-    'video__box-description';
+    "video__box-title"
+    "video__image"
+    "video__box-description";
   margin: 0 30px 58px 0;
   border: 1px solid #ececec;
   background-color: #ffffff;
@@ -11,16 +11,16 @@
 
   @include tablet {
     grid-template-areas:
-    'video__image'
-    'video__box-title'
-    'video__box__description';
+      "video__image"
+      "video__box-title"
+      "video__box__description";
     width: 668px;
   }
 
   @include desktop {
     grid-template-areas:
-    'video__image video__box-title'
-    'video__image video__box-description';
+      "video__image video__box-title"
+      "video__image video__box-description";
     width: 1050px;
   }
 }

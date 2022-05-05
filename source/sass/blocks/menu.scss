@@ -89,6 +89,12 @@
   @include tablet {
     margin-right: 45px;
   }
+
+  @include desktop {
+    margin-right: 35px;
+    width: 184px;
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+  }
 }
 
 .menu__buttons {
@@ -116,7 +122,6 @@
 }
 
 .menu__buttons .menu__item:first-child {
-
   @include tablet {
     margin-right: 79px;
     width: 82px;
@@ -152,14 +157,6 @@
     padding: 0;
     border: none;
     min-height: 88px;
-  }
-}
-
-.menu__links .menu__item:first-child {
-  @include desktop {
-    margin-right: 35px;
-    width: 184px;
-    border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
   }
 }
 
