@@ -4,10 +4,36 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.client__name {
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include tablet {
+    font-size: 17px;
+  }
 }
 
 .client__link {
   font-weight: 400;
   color: #444444;
   text-decoration: none;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include tablet {
+    font-size: 17px;
+  }
 }

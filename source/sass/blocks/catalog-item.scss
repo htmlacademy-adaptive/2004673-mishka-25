@@ -1,0 +1,35 @@
+.item {
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  padding: 28px 22px 26px 28px;
+
+  @include tablet {
+    width: 335px;
+  }
+}
+
+.item__title {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.item__description {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.item__third-cart {
+  margin-bottom: 12px;
+}
+
+.item__hr {
+  border: 1px solid #ececec;
+  background-color: #ececec;
+  margin-bottom: 22px;
+}

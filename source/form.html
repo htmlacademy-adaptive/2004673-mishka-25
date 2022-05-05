@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <nav class="navigation">
-          <a class="navigation__logo logo" href="./index.html">
-            <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="86" height="35">
-          </a>
-          <div class="navigation__menu menu">
-            <button class="menu__button">
-              <svg class="menu__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
-                <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
-                <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
-              </svg>
-              <span class="visually-hidden">Меню.</span>
-            </button>
+          <div class="navigation__menu menu__close menu__nojs">
+            <div class="navigation__container">
+              <a class="navigation__logo logo" href="./index.html">
+                <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka.">
+              </a>
+              <button class="menu__button">
+                <svg class="menu__icon--open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
+                  <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
+                  <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
+                </svg>
+                <svg class="menu__icon--close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Меню.</span>
+              </button>
+            </div>
             <div class="menu__wrapper">
               <ul class="menu__links">
                 <li class="menu__item">
@@ -33,10 +39,20 @@
               </ul>
               <ul class="menu__buttons">
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Поиск по сайту</a>
+                  <a class="menu__link search" href="#">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" fill="black"/>
+                    </svg>
+                    <span>Поиск по сайту</span>
+                  </a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#">Корзина: пока пуста</a>
+                  <a class="menu__link basket" href="#">
+                    <svg width="21" height="18" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                    </svg>
+                    Корзина: пока пуста
+                  </a>
                 </li>
               </ul>
             </div>

@@ -1,11 +1,10 @@
 .reviews {
-  margin: 0 30px;
-
   @include tablet {
     background-image: url("/img/background/background-review.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
     padding: 82px 0 47px 50px;
+    margin-bottom: 68px;
   }
 
   @include desktop {
@@ -13,14 +12,25 @@
     background-repeat: no-repeat;
     background-size: 350px 457px;
     padding: 78px 0 96px 174px;
+    margin-bottom: 67px;
   }
 }
 
-.reviews__reviews {
+.reviews__title {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__slider {
@@ -30,6 +40,7 @@
 
   @include tablet {
     flex-direction: row;
+    position: relative;
   }
 
   @include desktop {
@@ -44,24 +55,58 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @include tablet {
+    margin-bottom: 61px;
+    width: 527px;
+    font-size: 17px;
+  }
+
+  @include desktop {
+    margin-bottom: 44px;
+    width: 698px;
+    font-size: 17px;
+  }
 }
 
-.reviews__bottons {
+.reviews__buttons {
   margin-bottom: 45px;
-}
 
-.reviews__chevrons {
-  margin-bottom: 38px;
+  @include tablet {
+    position: absolute;
+    top: 150px;
+    right: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    //top: 150px;//
+    right: -13px;
+  }
 }
 
 .reviews__send {
-  margin-bottom: 45px;
   background-color: #ffffff;
   border: 2px solid #444444;
   box-sizing: border-box;
-  padding: 16px 65px;
+  padding: 16px 76px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   color: #444444;
+  text-transform: uppercase;
+
+  @include tablet {
+    position: absolute;
+    bottom: 210px;
+    right: 34px;
+    padding: 16px 26px;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: -64px;
+    right: 34px;
+    padding: 16px 26px;
+  }
 }

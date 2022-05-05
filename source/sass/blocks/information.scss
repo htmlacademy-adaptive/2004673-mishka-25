@@ -1,5 +1,9 @@
 .information {
-  margin: 31px 30px 58px 30px;
+  margin: 31px 0 28px 0;
+
+  @include desktop {
+    margin: 68px 0 90px 175px;
+  }
 }
 
 .information__title {
@@ -8,6 +12,18 @@
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+
+  @include tablet {
+    margin-bottom: 41px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 39px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .information__list {
@@ -22,6 +38,7 @@
     column-gap: 100px;
     row-gap: 59px;
     grid-auto-flow: column;
+    margin-bottom: 83px;
   }
 
   @include desktop {
@@ -39,4 +56,15 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
+
+.information__item img {
+  margin-bottom: 20px;
 }

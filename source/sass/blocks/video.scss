@@ -1,48 +1,113 @@
 .video {
-  margin: 0 30px 58px 30px;
+  display: grid;
+  grid-template-areas:
+    'video__box-title'
+    'video__image'
+    'video__box-description';
+  margin: 0 30px 58px 0;
   border: 1px solid #ececec;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
   width: 260px;
 
   @include tablet {
-    flex-direction: column;
+    grid-template-areas:
+    'video__image'
+    'video__box-title'
+    'video__box__description';
     width: 668px;
   }
 
   @include desktop {
+    grid-template-areas:
+    'video__image video__box-title'
+    'video__image video__box-description';
     width: 1050px;
-    flex-direction: row;
+  }
+}
+
+.video__image {
+  grid-area: video__image;
+  margin-bottom: 35px;
+  width: 260px;
+  height: 150px;
+
+  @include tablet {
+    margin-bottom: 0;
+    width: 668px;
+    height: 455px;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
+    width: 682px;
+    height: 457px;
+  }
+}
+
+.video__box-title {
+  display: flex;
+  flex-direction: row;
+  grid-area: video__box-title;
+  margin: 21px 13px 26px 34px;
+
+  @include tablet {
+    margin: 39px 290px 24px 42px;
+  }
+
+  @include desktop {
+    margin: 47px 110px 27px 79px;
+    flex-direction: column;
+  }
+}
+
+.video__svg {
+  margin-top: 14px;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    margin: 0 0 27px 0;
   }
 }
 
 .video__title {
-  margin: 21px 13px 26px 34px;
+  margin-left: 25px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
-}
-
-.video__image {
-  margin-bottom: 35px;
 
   @include tablet {
-    order: -1;
+    font-size: 20px;
   }
 
   @include desktop {
-    order: -1;
+    margin-left: 0;
+    font-size: 20px;
   }
 }
 
 .video__description {
+  grid-area: video__box-description;
   margin: 0 0 41px 34px;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
+
+  @include tablet {
+    margin: 24px 17px 40px 40px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @include desktop {
+    margin: 27px 36px 51px 79px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .video__button {
@@ -56,4 +121,16 @@
   font-size: 18px;
   line-height: 16px;
   color: #444444;
+
+  @include tablet {
+    margin: 0 42px 46px 42px;
+    padding: 18px 207px;
+    font-size: 17px;
+  }
+
+  @include desktop {
+    margin: 0 57px 60px 79px;
+    padding: 18px 31px 18px 29px;
+    font-size: 17px;
+  }
 }
