@@ -1,0 +1,15 @@
+.news__item {
+  list-style-type: none;
+
+  &:first-child {
+    margin-right: 36px;
+  }
+}
+
+.news__link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}

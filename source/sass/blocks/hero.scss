@@ -1,10 +1,82 @@
 .hero {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  background: url("../img/background/background-hero.jpg") no-repeat;
-  background-size: cover;
-  object-fit: cover; // не могу разобраться//
+  margin: 0 -30px;
+  background: url("../img/background/hero-mobile.jpg") no-repeat;
+  background-size: auto;
+  background-position: 50% 0;
+
+  @include tablet {
+    margin: 0 -50px;
+    background: url("../img/background/hero-desktop.jpg") no-repeat;
+    background-position: 50% 50%;
+  }
+
+  @include desktop {
+    margin: 0 -50px;
+    background: url("../img/background/hero-desktop.jpg") no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+}
+
+.hero__delivery {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 106px;
+    right: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    text-align: right;
+  }
+
+  @include desktop {
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    right: 21px;
+  }
+}
+
+.hero__news {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    min-height: 24px;
+  }
+}
+
+.news__list {
+  list-style-type: none;
+  margin-left: 50px;
+
+  @include desktop {
+    position: absolute;
+    top: 106px;
+  }
+}
+
+.news__list:first-child {
+  margin-right: 48px;
+}
+
+.news__list:last-child {
+  @include desktop {
+    left: 219px;
+  }
+}
+
+.news__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
 }
 
 .hero__title {
@@ -16,12 +88,16 @@
   color: #000000;
 
   @include tablet {
-    width: 568px;
+    width: 438px;
+    font-size: 43px;
+    line-height: 50px;
     margin: 109px auto 372px auto;
   }
 
   @include desktop {
-    width: 700px;
+    width: 543px;
+    font-size: 53px;
+    line-height: 57px;
     margin: 113px auto 355px auto;
   }
 }
@@ -32,27 +108,49 @@
 
   @include tablet {
     flex-direction: row;
+    margin: 0 50px;
   }
 
   @include desktop {
     flex-direction: row;
+    margin: 0 auto;
   }
 }
 
 .hero__item {
   list-style-type: none;
-  width: 130px;
+  width: 320px;
+  height: 103px;
+
+  @include tablet {
+    width: 334px;
+  }
+
+  @include desktop {
+    width: 525px;
+  }
 }
 
 .hero__item:first-child {
   background-color: #63d1bb;
+  background-image: url("/img/background/decorative-object.png");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
 }
 
 .hero__item:last-child {
   background-color: #56c3b2;
+  background-image: url("/img/background/children's-toys.png");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
 }
 
 .hero__link {
+  margin-top: 24px;
+  margin-left: 30px;
+  width: 130px;
+  display: block;
+  font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;

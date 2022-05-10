@@ -1,8 +1,59 @@
 .catalog__hero {
+  margin: 0 -30px;
   background-color: #f1f1f1;
   min-width: 320px;
   min-height: 177px;
   display: flex;
+
+  @include tablet {
+    margin: 0 -50px;
+    position: relative;
+  }
+
+  @include desktop {
+    margin: 0 -50px;
+    position: relative;
+  }
+}
+
+.catalog__news {
+  display: none;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 19px 0 0 51px;
+  }
+}
+
+.catalog__delivery {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  @include desktop {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
 }
 
 .catalog__title {
@@ -22,77 +73,15 @@
   flex-direction: column;
 
   @include tablet {
+    margin: 67px 50px 53px 50px;
     width: 669px;
     flex-direction: column;
   }
 
   @include desktop {
+    margin: 111px 50px 57px 50px;
     display: grid;
     grid-template-columns: 316px 316px 316px;
     gap: 51px;
   }
-}
-
-.ware {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  width: 260px;
-  margin-bottom: 30px;
-
-  @include tablet {
-    width: 669px;
-    flex-direction: row;
-    margin-bottom: 54px;
-  }
-
-  @include desktop {
-    width: 316px;
-    flex-direction: column;
-  }
-}
-
-.ware:last-child {
-  margin-bottom: 0;
-}
-
-.item {
-  background-color: #ffffff;
-  border: 1px solid #ececec;
-  padding: 28px 22px 26px 28px;
-}
-
-.item__title {
-  margin-bottom: 6px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.item__description {
-  margin-bottom: 17px;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 30px;
-  color: #444444;
-}
-
-.item__hr {
-  border: 1px solid #ececec;
-  background-color: #ececec;
-  margin-bottom: 22px;
-}
-
-.pricelist {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pricelist__price {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  color: #000000;
 }

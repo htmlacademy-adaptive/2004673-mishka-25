@@ -5,12 +5,19 @@
 @import "../sass/base.scss";
 @import "../sass/blocks/popover.scss";
 @import "../sass/blocks/header.scss";
+@import "../sass/blocks/navigation.scss";
 @import "../sass/blocks/menu.scss";
+@import "../sass/blocks/search.scss";
+@import "../sass/blocks/basket.scss";
+@import "../sass/blocks/contacts.scss";
 @import "../sass/blocks/footer.scss";
 
 //catalog//
 @import "../sass/blocks/catalog.scss";
-@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/catalog-news.scss";
+@import "../sass/blocks/catalog-ware.scss";
+@import "../sass/blocks/catalog-item.scss";
+@import "../sass/blocks/catalog-pricelist.scss";
 
 //form//
 @import "../sass/blocks/form.scss";

@@ -1,10 +1,42 @@
+.chevron {
+  margin-bottom: 38px;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 163px;
+  }
+}
+
 .chevron__item {
   background-color: #ffffff;
   border: 2px solid #ececec;
   box-sizing: border-box;
-  padding: 13px 42px 13px 38px;
+  padding: 11px 40px 11px 36px;
+
+  @include tablet {
+    border: none;
+  }
+
+  @include desktop {
+    border: none;
+  }
 }
 
 .chevron__item:first-child {
   margin-right: -6px;
+
+  @include tablet {
+    margin-right: -43px;
+  }
+
+  @include desktop {
+    margin-right: -43px;
+  }
 }
