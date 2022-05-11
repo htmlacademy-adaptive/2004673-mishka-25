@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon16.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/img/favicon/favicon152.png">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -14,15 +17,19 @@
           <div class="navigation__menu menu__close menu__nojs">
             <div class="navigation__container">
               <a class="navigation__logo logo" href="./index.html">
-                <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka.">
+                <picture class="logo__container">
+                  <source media="(min-width: 1150px)" srcset="./img/logo/mishka-logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./img/logo/mishka-logo-tablet.svg">
+                  <img class="logo__icon" src="./img/logo/mishka-logo-mobile.svg" alt="Logo Mishka." width="86" height="35">
+                </picture>
               </a>
               <button class="menu__button">
-                <svg class="menu__icon--open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu__icon-open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
                   <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
                   <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
                 </svg>
-                <svg class="menu__icon--close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu__icon-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
                 </svg>
                 <span class="visually-hidden">Меню.</span>
@@ -178,7 +185,7 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <p class="contacts__name">e-mail:</p>
-              <p class="contacts__description--active">info@mimimishkashop.ru</p>
+              <p class="contacts__description-active">info@mimimishkashop.ru</p>
             </li>
             <li class="contacts__item">
               <p class="contacts__name">адрес:</p>
@@ -197,7 +204,7 @@
       </main>
       <footer class="footer">
         <a class="footer__logo logo" href="./index.html">
-          <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="101" height="34">
+          <img class="logo__icon" src="./img/logo/logo-footer.svg" alt="Logo Mishka." width="101" height="34">
         </a>
         <ul class="footer__links socials">
           <li class="socials__item">
@@ -232,20 +239,23 @@
         </div>
       </footer>
       <div class="modal modal-close">
-        <h2 class="modal__title">Добавить<br> в корзину</h2>
-        <form class="modal__choice choice" action="https://echo.htmlacademy.ru" method="get">
-          <p class="choice__description">Выберите размер:</p>
-          <div class="choice__container sizes">
-            <label class="sizes__name" for="choose-s">S</label>
-            <input class="sizes__input" type="radio" name="s" id="choose-s">
-            <label class="sizes__name" for="choose-m">M</label>
-            <input class="sizes__input" type="radio" name="m" id="choose-m">
-            <label class="sizes__name" for="choose-l">L</label>
-            <input class="sizes__input" type="radio" name="l" id="choose-l">
-          </div>
-        <button class="choice__button" type="submit">Добавить</button>
-        </form>
+        <div class="modal__container">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <form class="modal__choice choice" action="https://echo.htmlacademy.ru" method="get">
+            <p class="choice__description">Выберите размер:</p>
+            <div class="choice__container sizes">
+              <label class="sizes__name" for="choose-s">S</label>
+              <input class="sizes__input" type="radio" name="s" id="choose-s">
+              <label class="sizes__name" for="choose-m">M</label>
+              <input class="sizes__input" type="radio" name="m" id="choose-m">
+              <label class="sizes__name" for="choose-l">L</label>
+              <input class="sizes__input" type="radio" name="l" id="choose-l">
+            </div>
+            <button class="choice__button" type="submit">Добавить</button>
+          </form>
+        </div>
       </div>
     </div>
+  <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,43 +1,48 @@
 //common//
-@import "../sass/blocks/mixins.scss";
-@import "../sass/blocks/condition.scss";
-@import "../sass/blocks/font-face.scss";
+@import "./blocks/common/mixins.scss";
+@import "./blocks/common/condition.scss";
+@import "./blocks/common/font-face.scss";
 @import "../sass/base.scss";
-@import "../sass/blocks/popover.scss";
-@import "../sass/blocks/header.scss";
-@import "../sass/blocks/navigation.scss";
-@import "../sass/blocks/menu.scss";
-@import "../sass/blocks/search.scss";
-@import "../sass/blocks/basket.scss";
-@import "../sass/blocks/contacts.scss";
-@import "../sass/blocks/footer.scss";
+@import "./blocks/common/popover.scss";
+@import "./blocks/common/header.scss";
+@import "./blocks/common/navigation.scss";
+@import "./blocks/common/menu.scss";
+@import "./blocks/common/search.scss";
+@import "./blocks/common/basket.scss";
+@import "./blocks/common/contacts.scss";
+@import "./blocks/common/footer.scss";
 
 //catalog//
-@import "../sass/blocks/catalog.scss";
-@import "../sass/blocks/catalog-news.scss";
-@import "../sass/blocks/catalog-ware.scss";
-@import "../sass/blocks/catalog-item.scss";
-@import "../sass/blocks/catalog-pricelist.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/catalog-news.scss";
+@import "./blocks/catalog/catalog-ware.scss";
+@import "./blocks/catalog/catalog-item.scss";
+@import "./blocks/catalog/catalog-pricelist.scss";
 
 //form//
-@import "../sass/blocks/form.scss";
-@import "../sass/blocks/form-type.scss";
-@import "../sass/blocks/form-colors.scss";
-@import "../sass/blocks/form-name.scss";
-@import "../sass/blocks/form-contacts.scss";
-@import "../sass/blocks/form-additionally.scss";
+@import "./blocks/form/form.scss";
+@import "./blocks/form/details.scss";
+@import "./blocks/form/type.scss";
+@import "./blocks/form/type-product.scss";
+@import "./blocks/form/colors.scss";
+@import "./blocks/form/name.scss";
+@import "./blocks/form/chapter.scss";
+@import "./blocks/form/telephone.scss";
+@import "./blocks/form/mail.scss";
+@import "./blocks/form/additionally.scss";
+@import "./blocks/form/palette.scss";
 
 //index//
 
-@import "../sass/blocks/hero.scss";
-@import "../sass/blocks/information.scss";
-@import "../sass/blocks/product.scss";
-@import "../sass/blocks/reviews.scss";
-@import "../sass/blocks/reviews-client.scss";
-@import "../sass/blocks/reviews-chevron.scss";
-@import "../sass/blocks/video.scss";
+@import "./blocks/index/hero.scss";
+@import "./blocks/index/information.scss";
+@import "./blocks/index/product.scss";
+@import "./blocks/index/reviews.scss";
+@import "./blocks/index/reviews-client.scss";
+@import "./blocks/index/reviews-chevron.scss";
+@import "./blocks/index/video.scss";
 
 //modal//
-@import "../sass/blocks/modal.scss";
-@import "../sass/blocks/modal-sizes.scss";
-@import "../sass/blocks/modal-choice.scss";
+@import "./blocks/modal/modal.scss";
+@import "./blocks/modal/modal-sizes.scss";
+@import "./blocks/modal/modal-choice.scss";

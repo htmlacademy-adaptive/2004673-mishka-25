@@ -8,6 +8,14 @@
   font-size: 15px;
   line-height: 30px;
   color: #444444;
+
+  @include tablet {
+    font-size: 17px;
+  }
+
+  @include desktop {
+    font-size: 17px;
+  }
 }
 
 .choice__button {
@@ -20,4 +28,12 @@
   font-size: 17px;
   line-height: 16px;
   color: #ffffff;
+
+  @include tablet {
+    padding: 18px 113px;
+  }
+
+  @include desktop {
+    padding: 18px 113px;
+  }
 }

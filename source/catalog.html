@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon16.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/img/favicon/favicon152.png">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -14,7 +17,11 @@
           <div class="navigation__menu menu__close menu__nojs">
             <div class="navigation__container">
               <a class="navigation__logo logo" href="./index.html">
-                <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka.">
+                <picture class="logo__container">
+                  <source media="(min-width: 1150px)" srcset="./img/logo/mishka-logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./img/logo/mishka-logo-tablet.svg">
+                  <img class="logo__icon" src="./img/logo/mishka-logo-mobile.svg" alt="Logo Mishka." width="86" height="35">
+                </picture>
               </a>
               <button class="menu__button">
                 <svg class="menu__icon--open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +83,14 @@
           <ul class="catalog__list">
             <li class="catalog__item ware">
               <div class="ware__container">
-                <img class="ware__image" src="./img/catalog/bunny.jpg" alt="Зайчик-попрыгайчик.">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                  srcset="img/catalog/desktop/bunny-desktop.jpg 1x, img/catalog/desktop/bunny-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/bunny-tablet.jpg 1x, img/catalog/tablet/bunny-tablet@2x.jpg 2x">
+                  <img class="ware__image" src="img/catalog/mobile/bunny-mobile.jpg"
+                  srcset="img/catalog/mobile/bunny-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик.">
+                </picture>
               </div>
               <div class="ware__text item">
                 <h2 class="item__title">Зайчик-попрыгайчик</h2>
@@ -95,7 +109,14 @@
             </li>
             <li class="catalog__item ware">
               <div class="ware__container">
-                <img class="ware__image" src="./img/catalog/laundry_basket.jpg" alt="Корзинка для белья.">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                  srcset="img/catalog/desktop/laundry-basket-desktop.jpg 1x, img/catalog/desktop/laundry-basket-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="img/catalog/tablet/laundry-basket-tablet.jpg 1x, img/catalog/tablet/laundry-basket-tablet@2x.jpg 2x">
+                  <img class="ware__image" src="img/catalog/mobile/laundry-basket-mobile.jpg"
+                  srcset="img/catalog/mobile/laundry-basket-mobile@2x.jpg 2x" alt="Корзинка для белья">
+                </picture>
               </div>
               <div class="ware__text item">
                 <h2 class="item__title">Корзинка для белья</h2>
@@ -114,7 +135,14 @@
             </li>
             <li class="catalog__item ware">
               <div class="ware__container">
-                <img class="ware__image" src="./img/catalog/toy_basket.jpg" alt="Большая корзинка для игрушек.">
+                <picture>
+                  <source media="(min-width: 1150px)"
+                  srcset="/img/catalog/desktop/toy-basket-desktop.jpg 1x, /img/catalog/desktop/toy-basket-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)"
+                  srcset="/img/catalog/tablet/toy-basket-tablet.jpg 1x, /img/catalog/tablet/toy-basket-tablet@2x.jpg 2x">
+                  <img class="ware__image" src="./img/catalog/mobile/toy-basket-mobile.jpg"
+                  srcset="/img/catalog/mobile/toy-basket-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек.">
+                </picture>
               </div>
               <div class="ware__text item">
                 <h2 class="item__title">Большая корзинка<br> для игрушек</h2>
@@ -150,7 +178,7 @@
       </main>
       <footer class="footer">
         <a class="footer__logo logo" href="./index.html">
-          <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="101" height="34">
+          <img class="logo__icon" src="./img/logo/logo-footer.svg" alt="Logo Mishka." width="101" height="34">
         </a>
         <ul class="footer__links socials">
           <li class="socials__item">
@@ -200,5 +228,6 @@
         </form>
       </div>
     </div>
+  <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,5 @@
 .item {
   background-color: #ffffff;
-  border: 1px solid #ececec;
   padding: 28px 22px 26px 28px;
 
   @include tablet {
@@ -17,19 +16,43 @@
 }
 
 .item__description {
-  margin-bottom: 36px;
+  margin-bottom: 17px;
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
+
+  @include tablet {
+    margin-bottom: 169px;
+  }
+
+  @include desktop {
+    margin-bottom: 36px;
+  }
 }
 
 .item__third-cart {
-  margin-bottom: 12px;
+  margin-bottom: 17px;
+
+  @include tablet {
+    margin-bottom: 148px;
+  }
+
+  @include desktop {
+    margin-bottom: 12px;
+  }
 }
 
 .item__hr {
   border: 1px solid #ececec;
   background-color: #ececec;
   margin-bottom: 22px;
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
+
+  @include desktop {
+    margin-bottom: 23px;
+  }
 }

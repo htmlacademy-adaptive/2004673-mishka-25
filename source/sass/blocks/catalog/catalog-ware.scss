@@ -4,14 +4,17 @@
   background-color: #ffffff;
   width: 260px;
   margin: 0 0 30px -30px;
+  border: 1px solid #ececec;
 
   @include tablet {
     width: 669px;
+    height: 334px;
     flex-direction: row;
-    margin-bottom: 54px;
+    margin: 0 0 54px 0;
   }
 
   @include desktop {
+    margin: 0;
     width: 316px;
     flex-direction: column;
   }
