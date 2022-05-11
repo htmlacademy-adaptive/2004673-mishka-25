@@ -27,7 +27,7 @@
 .chapter__input {
   height: 52px;
   border: none;
-  box-shadow: inset 0px -2px 0px #000000;
+  box-shadow: inset 0 -2px 0 #000000;
 }
 
 .chapter__input::placeholder {
@@ -72,7 +72,6 @@
     margin-left: 10px;
     margin-bottom: 24px;
   }
-
 }
 
 .chapter:nth-child(2) .chapter__input {
