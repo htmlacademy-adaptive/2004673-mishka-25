@@ -11,6 +11,7 @@
     align-items: center;
     height: 143px;
     margin: 0 -50px;
+    padding: 51px 50px 58px 50px;
   }
 
   @include desktop {
@@ -19,6 +20,7 @@
     align-items: center;
     height: 143px;
     margin: 0 -50px;
+    padding: 51px 50px 58px 50px;
   }
 }
 
@@ -27,12 +29,10 @@
 
   @include tablet {
     display: block;
-    margin-left: 50px;
   }
 
   @include desktop {
     display: block;
-    margin-left: 50px;
   }
 }
 
@@ -55,11 +55,11 @@
   display: flex;
 
   @include tablet {
-    margin-left: 123px;
+    margin: 0 auto;
   }
 
   @include desktop {
-    margin-left: 313px;
+    margin: 0 auto;
   }
 }
 
@@ -77,11 +77,11 @@
   align-items: center;
 
   @include tablet {
-    margin-right: 50px;
+    margin: 22px 0 0 0;
   }
 
   @include desktop {
-    margin-right: 50px;
+    margin: 22px 0 0 0;
   }
 }
 

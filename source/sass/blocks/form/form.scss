@@ -1,22 +1,25 @@
-.catalog__hero {
+.form__hero {
   margin: 0 -30px;
   background-color: #f1f1f1;
   min-width: 320px;
   min-height: 177px;
   display: flex;
+  flex-direction: column;
 
   @include tablet {
     margin: 0 -50px;
     position: relative;
+    min-height: 213px;
   }
 
   @include desktop {
     margin: 0 -50px;
     position: relative;
+    min-height: 237px;
   }
 }
 
-.catalog__news {
+.form__news {
   display: none;
 
   @include tablet {
@@ -30,7 +33,7 @@
   }
 }
 
-.catalog__delivery {
+.form__delivery {
   display: none;
 
   @include tablet {
@@ -56,32 +59,45 @@
   }
 }
 
-.catalog__title {
+.form__title {
   justify-self: center;
   align-self: center;
-  margin: 0 auto;
+  margin: auto;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   color: #000000;
-}
-
-.catalog__list {
-  margin: 30px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
 
   @include tablet {
-    margin: 67px 50px 53px 50px;
-    width: 669px;
-    flex-direction: column;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @include desktop {
-    margin: 111px 50px 57px 50px;
-    display: grid;
-    grid-template-columns: 316px 316px 316px;
-    gap: 51px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.form__description {
+  margin: 17px 0 29px 0;
+  width: 260px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+
+  @include tablet {
+    margin: 54px 0 13px 0;
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @include desktop {
+    margin: 98px 237px 13px 146px;
+    width: 702px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

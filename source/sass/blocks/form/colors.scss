@@ -10,18 +10,31 @@
   @include tablet {
     flex-direction: row;
     background-color: #f1f1f1;
+    padding: 50px;
+    margin: 0;
   }
 
   @include desktop {
     flex-direction: row;
     background-color: #f1f1f1;
+    padding: 48px 95px 52px 97px;
+    margin: 0;
   }
 }
 
+.colors__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .colors__list {
+  margin-top: 25px;
   list-style-type: none;
 
   @include tablet {
+    margin-top: 0;
+    margin-left: 93px;
     display: grid;
     grid-template-columns: 249px 263px;
     grid-template-rows: 52px 52px 52px;
@@ -30,10 +43,24 @@
   }
 
   @include desktop {
+    margin-top: 0;
+    margin-left: 55px;
     display: grid;
     grid-template-columns: 249px 249px 304px;
     grid-template-rows: 52px 52px;
     column-gap: 14px;
     row-gap: 24px;
+  }
+}
+
+.colors__item:not(:last-child) {
+  margin-bottom: 42px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 0;
   }
 }

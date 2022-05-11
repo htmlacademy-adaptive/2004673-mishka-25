@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon16.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="/img/favicon/favicon152.png">
     <link rel="stylesheet" href="./css/style.css">
-    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -14,15 +17,19 @@
           <div class="navigation__menu menu__close menu__nojs">
             <div class="navigation__container">
               <a class="navigation__logo logo" href="./index.html">
-                <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka.">
+                <picture class="logo__container">
+                  <source media="(min-width: 1150px)" srcset="./img/logo/mishka-logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="./img/logo/mishka-logo-tablet.svg">
+                  <img class="logo__icon" src="./img/logo/mishka-logo-mobile.svg" alt="Logo Mishka." width="86" height="35">
+                </picture>
               </a>
               <button class="menu__button">
-                <svg class="menu__icon--open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu__icon-open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
                   <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
                   <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
                 </svg>
-                <svg class="menu__icon--close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu__icon-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
                 </svg>
                 <span class="visually-hidden">Меню.</span>
@@ -62,90 +69,119 @@
       <main class="main">
         <section class="form">
           <div class="form__hero">
+            <ul class="form__news news">
+              <li class="news__item">
+                <a class="news__link" href="#">Новые поступления</a>
+              </li>
+              <li class="news__item">
+                <a class="news__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="form__delivery">Бесплатная доставка по России</p>
             <h1 class="form__title">Вязание на заказ</h1>
           </div>
           <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
           заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="form__container details" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="details__type type">
-              <h2 class="type__title">Тип</h2>
+              <div class="type__container">
+                <h2 class="type__title details-title">Тип</h2>
+                <hr class="type__hr details-title-hr">
+              </div>
               <ul class="type__list">
-                <li class="type__item product">
-                  <label class="product__container">
-                    <input class="product__input" type="radio" name="product-group" value="product-type" checked>
-                    <span class="product__title">Аксессуар для интерьера</span>
+                <li class="type__item form-product">
+                  <label class="form-product__container">
+                    <input class="form-product__input" type="radio" name="product-group" value="product-type" checked>
+                    <span class="form-product__style"></span>
+                    <span class="form-product__title details-name">Аксессуар для интерьера</span>
                   </label>
                 </li>
-                <li class="type__item product">
-                  <label class="product__container">
-                    <input class="product__input" type="radio" name="product-group" value="product-type">
-                    <span class="product__title">Детская игрушка</span>
+                <li class="type__item form-product">
+                  <label class="form-product__container">
+                    <input class="form-product__input" type="radio" name="product-group" value="product-type">
+                    <span class="form-product__style"></span>
+                    <span class="form-product__title details-name">Детская игрушка</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="details__colors colors">
-              <h2 class="colors__title">Цвет</h2>
+              <div class="colors__container">
+                <h2 class="colors__title details-title">Цвет</h2>
+                <hr class="colors__hr details-title-hr">
+              </div>
               <ul class="colors__list">
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-white">
                     <input class="palette__input" type="checkbox" id="color-white" name="color[]" value="white" checked>
-                    <span class="palette__title">Белый</span>
+                    <span class="palette__style"></span>
+                    <span class="palette__title details-name">Белый</span>
                   </label>
                 </li>
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-gray">
                     <input class="palette__input" type="checkbox" id="color-gray" name="color[]" value="gray" checked>
-                    <span class="palette__title">Серый</span>
+                    <span class="palette__style"></span>
+                    <span class="palette__title details-name">Серый</span>
                   </label>
                 </li>
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-tiffany">
                     <input class="palette__input" type="checkbox" id="color-tiffany" name="color[]" value="tiffany">
-                    <span class="palette__title">Тиффани</span>
+                    <span class="palette__style"></span>
+                    <span class="palette__title details-name">Тиффани</span>
                   </label>
                 </li>
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-black">
                     <input class="palette__input" type="checkbox" id="color-black" name="color[]" value="black">
-                    <span class="palette__title">Черный</span>
+                    <span class="palette__style"></span>
+                    <span class="palette__title details-name">Черный</span>
                   </label>
                 </li>
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-pink">
                     <input class="palette__input" type="checkbox" id="color-pink" name="color[]" value="pink">
-                    <span class="palette__title">Розовый</span>
+                    <span class="palette__style"></span>
+                    <span class="palette__title details-name">Розовый</span>
                   </label>
                 </li>
                 <li class="colors__item palette">
                   <label class="palette__container" for="color-orange">
                     <input class="palette__input" type="checkbox" id="color-orange" name="color[]" value="orange">
-                    <span class="palette__title">Оранжевый</span>
+                    <span class="palette__style"></span>
+                    <span class="palette__title details-name">Оранжевый</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <div class="details__name name">
-              <h2 class="name__title">ФИО</h2>
               <div class="name__container">
+                <h2 class="name__title details-title">ФИО</h2>
+                <hr class="name__hr details-title-hr">
+              </div>
+              <div class="name__list">
                 <div class="name__chapter chapter">
-                  <label class="chapter__title" for="name">Имя:</label>
+                  <label class="chapter__title details-name" for="name">Имя:</label>
                   <input class="chapter__input" type="text" id="name" placeholder="Введите ваше имя*" required>
                 </div>
                 <div class="name__chapter chapter">
-                  <label class="chapter__title" for="surname">Фамилия:</label>
+                  <label class="chapter__title details-name" for="surname">Фамилия:</label>
                   <input class="chapter__input" type="text" id="surname" placeholder="Укажите фамилию*" required>
                 </div>
                 <div class="name__chapter chapter">
-                  <label class="chapter__title" for="patronymic">Отчество:</label>
+                  <label class="chapter__title details-name" for="patronymic">Отчество:</label>
                   <input class="chapter__input" type="text" id="patronymic" placeholder="Отчество, если желаете">
                 </div>
               </div>
             </div>
             <div class="details__contacts">
               <div class="details__telephone telephone">
-                <h2 class="telephone__title">Тел</h2>
                 <div class="telephone__container">
+                  <h2 class="telephone__title details-title">Тел</h2>
+                  <hr class="telephone__hr details-title-hr">
+                </div>
+                <div class="telephone__box">
                   <label class="visually-hidden" for="tel">Номер телефона.</label>
                   <input class="telephone__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
                   placeholder="+7 ХХХ ХХХ ХХ ХХ*"
@@ -153,16 +189,22 @@
                 </div>
               </div>
               <div class="details__mail mail">
-                <h2 class="mail__title">E-mail</h2>
                 <div class="mail__container">
+                  <h2 class="mail__title details-title">E-mail</h2>
+                  <hr class="mail__hr details-title-hr">
+                </div>
+                <div class="mail__box">
                   <label class="visually-hidden" for="e-mail">Ваш Email.</label>
                   <input class="mail__input" type="email" id="e-mail" placeholder="Ваш Email*" required>
                 </div>
               </div>
             </div>
             <div class="details__additionally additionally">
-              <h2 class="additionally__title">Доп</h2>
               <div class="additionally__container">
+                <h2 class="additionally__title details-title">Доп</h2>
+                <hr class="additionally__hr details-title-hr">
+              </div>
+              <div class="additionally__box">
                 <label class="visually-hidden" for="comment">Комментарий.</label>
                 <textarea class="additionally__input" name="text" id="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
@@ -176,7 +218,7 @@
       </main>
       <footer class="footer">
         <a class="footer__logo logo" href="./index.html">
-          <img class="logo__icon" src="./img/logo/mishka_icon.svg" alt="Logo Mishka." width="101" height="34">
+          <img class="logo__icon" src="./img/logo/logo-footer.svg" alt="Logo Mishka." width="101" height="34">
         </a>
         <ul class="footer__links socials">
           <li class="socials__item">
@@ -211,5 +253,6 @@
         </div>
       </footer>
     </div>
+  <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 let navMain = document.querySelector('.navigation__menu');
 let navToggle = document.querySelector('.menu__button');
-let closeIcon = document.querySelector('.menu__icon--close');
-let menuIcon = document.querySelector('.menu__icon--open');
+let closeIcon = document.querySelector('.menu__icon-close');
+let menuIcon = document.querySelector('.menu__icon-open');
 let ItemList = document.querySelector('.menu__wrapper');
 
 navMain.classList.remove('menu__nojs');
