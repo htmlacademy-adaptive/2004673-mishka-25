@@ -66,6 +66,18 @@
   @include desktop {
     padding: 18px 17px;
   }
+
+  &:hover {
+    background-color: #444444;
+    border: 2px solid #444444;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #444444;
+    border: 2px solid #444444;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .details-title {

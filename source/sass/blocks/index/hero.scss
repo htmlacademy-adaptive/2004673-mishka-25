@@ -2,21 +2,59 @@
   display: flex;
   flex-direction: column;
   margin: 0 -30px;
-  background: url("../img/background/hero-mobile.jpg") no-repeat;
+  background-color: #ffffff;
+  background-image: url("../../../img/background/hero-mobile.jpg");
+  background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% 0;
 
   @include tablet {
+    position: relative;
     margin: 0 -50px;
-    background: url("../img/background/hero-desktop.jpg") no-repeat;
+    background: url("../../../img/background/hero-desktop.jpg") no-repeat;
     background-position: 50% 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      z-index: 99;
+      left: 0;
+      width: 100vw;
+      background: url("../../../img/background/zigzag-hero.png") no-repeat;
+      background-size: 100% 100%;
+      min-height: 24px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/background/hero@2x.png");
+      background-size: 1150px auto;
+    }
   }
 
   @include desktop {
+    position: relative;
     margin: 0 -50px;
-    background: url("../img/background/hero-desktop.jpg") no-repeat;
+    background: url("../../../img/background/hero-desktop.jpg") no-repeat;
     background-position: 50% 50%;
-    background-size: contain;
+    background-size: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      z-index: 99;
+      left: 0;
+      width: 100vw;
+      background: url("../../../img/background/zigzag-hero-desktop.png") no-repeat;
+      background-size: 100% 100%;
+      min-height: 34px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/background/hero@2x.png");
+      background-size: cover;
+    }
   }
 }
 
@@ -26,7 +64,7 @@
   @include tablet {
     display: block;
     position: absolute;
-    top: 106px;
+    top: 22px;
     right: 50px;
     font-weight: 400;
     font-size: 15px;
@@ -39,7 +77,7 @@
     display: block;
     position: absolute;
     margin-top: 20px;
-    right: 21px;
+    right: 50px;
   }
 }
 
@@ -48,35 +86,7 @@
 
   @include desktop {
     display: flex;
-    min-height: 24px;
   }
-}
-
-.news__list {
-  list-style-type: none;
-  margin-left: 50px;
-
-  @include desktop {
-    position: absolute;
-    top: 106px;
-  }
-}
-
-.news__list:first-child {
-  margin-right: 48px;
-}
-
-.news__list:last-child {
-  @include desktop {
-    left: 219px;
-  }
-}
-
-.news__link {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  color: #000000;
 }
 
 .hero__title {
@@ -105,10 +115,11 @@
 .hero__list {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   @include tablet {
     flex-direction: row;
-    margin: 0 50px;
+    margin: 0 auto;
   }
 
   @include desktop {
@@ -120,7 +131,7 @@
 .hero__item {
   list-style-type: none;
   width: 320px;
-  height: 103px;
+  height: 119px;
 
   @include tablet {
     width: 334px;
@@ -129,6 +140,25 @@
   @include desktop {
     width: 525px;
   }
+
+  &:hover {
+    transform: scaleY(1.05);
+    transform-origin: bottom;
+    transition: .2ms;
+
+    & > * {
+      transform: scaleY(0.95);
+    }
+
+    &:first-child {
+      background-size: 40px 61px;
+    }
+
+    &:last-child {
+      background-size: 60px 58px;
+    }
+
+  }
 }
 
 .hero__item:first-child {
@@ -136,6 +166,14 @@
   background-image: url("/img/background/decorative-object.png");
   background-repeat: no-repeat;
   background-position: 90% 50%;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:disabled {
+    background-color: #59d5bc;
+  }
 }
 
 .hero__item:last-child {
@@ -143,6 +181,14 @@
   background-image: url("/img/background/children's-toys.png");
   background-repeat: no-repeat;
   background-position: 90% 50%;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:disabled {
+    background-color: #46c1ae;
+  }
 }
 
 .hero__link {
