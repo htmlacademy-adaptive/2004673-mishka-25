@@ -9,19 +9,19 @@
 @import "./blocks/common/menu.scss";
 @import "./blocks/common/search.scss";
 @import "./blocks/common/basket.scss";
-@import "./blocks/common/contacts.scss";
 @import "./blocks/common/footer.scss";
 
 //catalog//
 @import "./blocks/catalog/catalog.scss";
-@import "./blocks/catalog/catalog-news.scss";
-@import "./blocks/catalog/catalog-ware.scss";
-@import "./blocks/catalog/catalog-item.scss";
-@import "./blocks/catalog/catalog-pricelist.scss";
+@import "./blocks/catalog/news.scss";
+@import "./blocks/catalog/ware.scss";
+@import "./blocks/catalog/item.scss";
+@import "./blocks/catalog/pricelist.scss";
+@import "./blocks/catalog/video.scss";
 
 //form//
 @import "./blocks/form/form.scss";
-@import "./blocks/form/form-details.scss";
+@import "./blocks/form/details.scss";
 @import "./blocks/form/type.scss";
 @import "./blocks/form/type-product.scss";
 @import "./blocks/form/colors.scss";
@@ -35,14 +35,15 @@
 //index//
 
 @import "./blocks/index/hero.scss";
+@import "./blocks/index/news.scss";
 @import "./blocks/index/information.scss";
 @import "./blocks/index/product.scss";
 @import "./blocks/index/reviews.scss";
-@import "./blocks/index/reviews-client.scss";
-@import "./blocks/index/reviews-chevron.scss";
-@import "./blocks/index/video.scss";
+@import "./blocks/index/client.scss";
+@import "./blocks/index/chevron.scss";
+@import "./blocks/index/contacts.scss";
 
 //modal//
 @import "./blocks/modal/modal.scss";
-@import "./blocks/modal/modal-sizes.scss";
-@import "./blocks/modal/modal-choice.scss";
+@import "./blocks/modal/sizes.scss";
+@import "./blocks/modal/choice.scss";

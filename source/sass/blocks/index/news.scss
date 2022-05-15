@@ -1,0 +1,34 @@
+.news__list {
+  list-style-type: none;
+  margin-left: 50px;
+
+  @include desktop {
+    position: absolute;
+    top: 22px;
+  }
+}
+
+.news__list:first-child {
+  margin-right: 48px;
+}
+
+.news__list:last-child {
+  @include desktop {
+    left: 219px;
+  }
+}
+
+.news__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

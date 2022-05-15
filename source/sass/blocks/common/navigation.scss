@@ -1,10 +1,24 @@
 .navigation {
+  position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @include tablet {
     height: 88px;
     position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 88px;
+      left: -50px;
+      min-height: 1px;
+      width: 100vw;
+      background-color: #000000;
+      opacity: 0.1;
+      z-index: 99;
+    }
   }
 
   @include desktop {
@@ -15,11 +29,12 @@
       content: "";
       position: absolute;
       top: 88px;
-      left: 0;
+      left: -50px;
       min-height: 1px;
-      min-width: 1200px;
+      min-width: 1150px;
       background-color: #000000;
       opacity: 0.1;
+      z-index: 99;
     }
   }
 }
@@ -28,7 +43,7 @@
   display: flex;
   min-width: 260px;
   align-items: center;
-  height: 79px;
+  min-height: 79px;
 
   @include tablet {
     min-width: 668px;
@@ -36,7 +51,6 @@
 
   @include desktop {
     width: 100%;
-    height: 88px;
   }
 }
 
@@ -71,12 +85,21 @@
     width: 149px;
     height: 72px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .navigation__menu {
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
 
   @include desktop {
     flex-direction: row;

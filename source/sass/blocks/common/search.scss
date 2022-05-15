@@ -1,7 +1,15 @@
 .search {
   position: relative;
-  border-left: 1px solid rgba($color: #000000, $alpha: 0.2);
-  border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+
+  @include tablet {
+    border-left: 1px solid rgba($color: #000000, $alpha: 0.2);
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+  }
+
+  @include desktop {
+    border-left: 1px solid rgba($color: #000000, $alpha: 0.2);
+    border-right: 1px solid rgba($color: #000000, $alpha: 0.2);
+  }
 
   span {
     @include tablet {
@@ -25,5 +33,14 @@
 
   @include desktop {
     top: 36px;
+  }
+
+  &:hover {
+    fill: #63d1bb;
+  }
+
+  &:disabled {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 }
