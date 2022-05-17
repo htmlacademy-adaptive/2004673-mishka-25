@@ -1,0 +1,41 @@
+.logo__icon {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo__mobile {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .logo__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo__tablet {
+    display: none;
+  }
+}
+
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .logo__desktop {
+    display: block;
+  }
+}

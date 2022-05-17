@@ -13,6 +13,14 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .item__description {

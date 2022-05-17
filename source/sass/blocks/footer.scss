@@ -34,6 +34,15 @@
   @include desktop {
     display: block;
   }
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:disabled {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .footer__hr {
@@ -48,52 +57,4 @@
   @include desktop {
     display: none;
   }
-}
-
-.socials {
-  margin: 0 89px 28px 89px;
-  list-style-type: none;
-  display: flex;
-
-  @include tablet {
-    margin: 0 auto;
-  }
-
-  @include desktop {
-    margin: 0 auto;
-  }
-}
-
-.socials__item {
-  margin-top: 25px;
-}
-
-.socials__item:not(:nth-child(3)) {
-  margin-right: 28px;
-}
-
-.author {
-  margin: 22px 69px 0 69px;
-  display: flex;
-  align-items: center;
-
-  @include tablet {
-    margin: 22px 0 0 0;
-  }
-
-  @include desktop {
-    margin: 22px 0 0 0;
-  }
-}
-
-.author__text {
-  margin-bottom: 22px;
-  margin-right: 27px;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
-}
-
-.author__link {
-  margin-bottom: 22px;
 }

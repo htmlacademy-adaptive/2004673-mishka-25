@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: 0 -30px;
   background-color: #ffffff;
-  background-image: url("../../../img/background/hero-mobile.jpg");
+  background-image: url("../img/background/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 50% 0;
@@ -11,7 +11,7 @@
   @include tablet {
     position: relative;
     margin: 0 -50px;
-    background: url("../../../img/background/hero-desktop.jpg") no-repeat;
+    background: url("../img/background/hero-desktop.jpg") no-repeat;
     background-position: 50% 50%;
 
     &::after {
@@ -21,13 +21,13 @@
       z-index: 99;
       left: 0;
       width: 100vw;
-      background: url("../../../img/background/zigzag-hero.png") no-repeat;
+      background: url("../img/background/zigzag-hero.png") no-repeat;
       background-size: 100% 100%;
       min-height: 24px;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/background/hero@2x.png");
+      background-image: url("../img/background/hero@2x.png");
       background-size: 1150px auto;
     }
   }
@@ -35,7 +35,7 @@
   @include desktop {
     position: relative;
     margin: 0 -50px;
-    background: url("../../../img/background/hero-desktop.jpg") no-repeat;
+    background: url("../img/background/hero-desktop.jpg") no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 
@@ -45,14 +45,14 @@
       bottom: -18px;
       z-index: 99;
       left: 0;
-      width: 1150px;
-      background: url("../../../img/background/zigzag-hero-desktop.png") no-repeat;
+      width: 100%;
+      background: url("../img/background/zigzag-hero-desktop.png") no-repeat;
       background-size: 100% 100%;
       min-height: 34px;
     }
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/background/hero@2x.png");
+      background-image: url("../img/background/hero@2x.png");
       background-size: cover;
     }
   }
@@ -81,11 +81,12 @@
   }
 }
 
-.hero__news {
+.hero__fresh {
   display: none;
 
   @include desktop {
     display: flex;
+    margin: 19px 0 0 51px;
   }
 }
 

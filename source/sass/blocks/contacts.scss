@@ -105,11 +105,20 @@
   font-size: 14px;
   line-height: 30px;
   color: #444444;
-  text-decoration: underline;
-  text-decoration-color: #62d1ba;
+  border-bottom: 1px solid #62d1ba;
 
   @include tablet {
     font-size: 17px;
+  }
+
+  &:hover {
+    color: #46c1ae;
+    border-bottom: 1px solid #46c1ae;
+  }
+
+  &:disabled {
+    color: #46c1ae;
+    border-bottom: 1px solid rgba($color: #46c1ae, $alpha: 0.1);
   }
 }
 

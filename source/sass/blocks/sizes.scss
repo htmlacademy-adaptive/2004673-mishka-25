@@ -24,7 +24,7 @@
   user-select: none;
   padding: 18px 29px;
   background-color: #ffffff;
-  border: 2px solid #63d1bb;
+  border: 2px solid rgba($color: #000000, $alpha: 0.1);
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
@@ -36,6 +36,14 @@
 
   @include desktop {
     padding: 18px 44px;
+  }
+
+  &:hover {
+    border: 2px solid rgba($color: #000000, $alpha: 0.3);
+  }
+
+  &:disabled {
+    border: 2px solid #62d1ba;
   }
 }
 

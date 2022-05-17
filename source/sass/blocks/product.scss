@@ -6,27 +6,27 @@
   &::after {
     content: "";
     margin: 36px -30px 0 -30px;
-    background: url("../../../img/background/zigzag.png") no-repeat;
+    background: url("../img/background/zigzag.png") no-repeat;
     background-size: 100% 100%;
     min-height: 6px;
   }
 
   @include tablet {
-    background-image: url("../../../img/background/background-basket.jpg");
+    background-image: url("../img/background/background-basket.jpg");
     background-repeat: no-repeat;
     background-size: 334px 404px;
     background-position: right 150px;
     margin-right: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/background/background-basket@2x.jpg");
+      background-image: url("../img/background/background-basket@2x.jpg");
       background-size: 334px auto;
     }
 
     &::after {
       content: "";
       margin: 52px -50px 0 -50px;
-      background: url("../../../img/background/zigzag-desktop.png") no-repeat;
+      background: url("../img/background/zigzag-desktop.png") no-repeat;
       background-size: 100% 100%;
       min-height: 17px;
     }
@@ -34,21 +34,21 @@
 
   @include desktop {
     position: relative;
-    background-image: url("../../../img/background/background-basket.jpg");
+    background-image: url("../img/background/background-basket.jpg");
     background-repeat: no-repeat;
     background-size: 525px 636px;
     background-position: 92% -12px;
     margin-right: -50px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/background/background-basket@2x.jpg");
+      background-image: url("../img/background/background-basket@2x.jpg");
       background-size: 525px auto;
     }
 
     &::after {
       content: "";
-      margin: 52px 50px 0 50px;
-      background: url("../../../img/background/zigzag-desktop.png") no-repeat;
+      margin: 52px 50px 0 0;
+      background: url("../img/background/zigzag-desktop.png") no-repeat;
       background-size: 100% 100%;
       min-height: 23px;
     }

@@ -1,0 +1,32 @@
+.socials {
+  margin: 0 89px 28px 89px;
+  list-style-type: none;
+  display: flex;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    margin: 0 auto;
+  }
+}
+
+.socials__item {
+  margin-top: 25px;
+}
+
+.socials__item:not(:nth-child(3)) {
+  margin-right: 28px;
+}
+
+.socials__link svg {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:disabled {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

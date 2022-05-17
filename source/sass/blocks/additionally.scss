@@ -49,6 +49,14 @@
     margin-left: 59px;
     width: 700px;
   }
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .additionally__input::placeholder {

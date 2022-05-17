@@ -19,6 +19,14 @@
     flex-direction: column;
   }
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:disabled {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -27,10 +35,9 @@
     min-width: 316px;
     width: 100%;
   }
-
 }
 
-.ware:nth-child(2) picture{
+.ware:nth-child(2) picture {
   padding-right: 4px;
 }
 
