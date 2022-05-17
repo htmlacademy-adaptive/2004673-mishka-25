@@ -1,0 +1,38 @@
+.author {
+  margin: 22px 69px 0 69px;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    margin: 22px 0 0 0;
+  }
+
+  @include desktop {
+    margin: 22px 0 0 0;
+  }
+}
+
+.author__text {
+  margin-bottom: 4px;
+  margin-right: 27px;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.author__link {
+  margin-bottom: 22px;
+}
+
+.author__icon {
+  fill: #63d1bb;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:disabled {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

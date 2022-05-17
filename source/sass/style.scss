@@ -3,47 +3,50 @@
 @import "./blocks/common/condition.scss";
 @import "./blocks/common/font-face.scss";
 @import "../sass/base.scss";
-@import "./blocks/common/popover.scss";
-@import "./blocks/common/header.scss";
-@import "./blocks/common/navigation.scss";
-@import "./blocks/common/menu.scss";
-@import "./blocks/common/search.scss";
-@import "./blocks/common/basket.scss";
-@import "./blocks/common/footer.scss";
+@import "blocks/popover";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/navigation";
+@import "blocks/menu";
+@import "blocks/search";
+@import "blocks/basket";
+@import "blocks/footer";
+@import "blocks/socials";
+@import "blocks/author";
 
 //catalog//
-@import "./blocks/catalog/catalog.scss";
-@import "./blocks/catalog/news.scss";
-@import "./blocks/catalog/ware.scss";
-@import "./blocks/catalog/item.scss";
-@import "./blocks/catalog/pricelist.scss";
-@import "./blocks/catalog/video.scss";
+@import "blocks/catalog";
+@import "blocks/fresh";
+@import "blocks/ware";
+@import "blocks/item";
+@import "blocks/pricelist";
+@import "blocks/video";
 
 //form//
-@import "./blocks/form/form.scss";
-@import "./blocks/form/details.scss";
-@import "./blocks/form/type.scss";
-@import "./blocks/form/type-product.scss";
-@import "./blocks/form/colors.scss";
-@import "./blocks/form/name.scss";
-@import "./blocks/form/chapter.scss";
-@import "./blocks/form/telephone.scss";
-@import "./blocks/form/mail.scss";
-@import "./blocks/form/additionally.scss";
-@import "./blocks/form/palette.scss";
+@import "blocks/form";
+@import "blocks/details";
+@import "blocks/type";
+@import "blocks/form-product";
+@import "blocks/colors";
+@import "blocks/name";
+@import "blocks/chapter";
+@import "blocks/telephone";
+@import "blocks/mail";
+@import "blocks/additionally";
+@import "blocks/palette";
 
 //index//
 
-@import "./blocks/index/hero.scss";
-@import "./blocks/index/news.scss";
-@import "./blocks/index/information.scss";
-@import "./blocks/index/product.scss";
-@import "./blocks/index/reviews.scss";
-@import "./blocks/index/client.scss";
-@import "./blocks/index/chevron.scss";
-@import "./blocks/index/contacts.scss";
+@import "blocks/hero";
+@import "blocks/news";
+@import "blocks/information";
+@import "blocks/product";
+@import "blocks/reviews";
+@import "blocks/client";
+@import "blocks/chevron";
+@import "blocks/contacts";
 
 //modal//
-@import "./blocks/modal/modal.scss";
-@import "./blocks/modal/sizes.scss";
-@import "./blocks/modal/choice.scss";
+@import "blocks/modal";
+@import "blocks/sizes";
+@import "blocks/choice";

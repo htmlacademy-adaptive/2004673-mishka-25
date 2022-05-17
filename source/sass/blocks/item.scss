@@ -1,0 +1,66 @@
+.item {
+  background-color: #ffffff;
+  padding: 28px 22px 26px 28px;
+
+  @include tablet {
+    width: 335px;
+  }
+}
+
+.item__title {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.item__description {
+  margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 30px;
+  color: #444444;
+
+  @include tablet {
+    margin-bottom: 169px;
+  }
+
+  @include desktop {
+    margin-bottom: 36px;
+  }
+}
+
+.item__third-cart {
+  margin-bottom: 17px;
+
+  @include tablet {
+    margin-bottom: 148px;
+  }
+
+  @include desktop {
+    margin-bottom: 12px;
+  }
+}
+
+.item__hr {
+  border: 1px solid #ececec;
+  background-color: #ececec;
+  margin-bottom: 22px;
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
+
+  @include desktop {
+    margin-bottom: 23px;
+  }
+}

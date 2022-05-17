@@ -1,0 +1,125 @@
+.catalog__hero {
+  margin: 0 -30px;
+  background-color: #f1f1f1;
+  min-width: 320px;
+  min-height: 177px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin: 0 -50px;
+    position: relative;
+    min-height: 226px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      z-index: 99;
+      left: 0;
+      width: 100vw;
+      background: url("../img/background/zigzag-hero.png") no-repeat;
+      background-size: 100% 100%;
+      min-height: 24px;
+    }
+  }
+
+  @include desktop {
+    margin: 0 -50px;
+    position: relative;
+    min-height: 255px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      z-index: 99;
+      left: 0;
+      width: 100%;
+      background: url("../img/background/zigzag-hero.png") no-repeat;
+      background-size: 100% 100%;
+      min-height: 24px;
+    }
+  }
+}
+
+.catalog__fresh {
+  display: none;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 19px 0 0 51px;
+  }
+}
+
+.catalog__delivery {
+  display: none;
+
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+
+  @include desktop {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+.catalog__title {
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.catalog__list {
+  margin: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin: 67px auto 53px auto;
+    width: 669px;
+    flex-direction: column;
+  }
+
+  @include desktop {
+    margin: 111px auto 57px auto;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    gap: 66px;
+    justify-content: center;
+  }
+}

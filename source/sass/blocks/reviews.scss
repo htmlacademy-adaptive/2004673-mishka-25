@@ -1,0 +1,173 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    margin: 0 -30px;
+    background: url("../img/background/zigzag.png") no-repeat;
+    background-size: 100% 100%;
+    min-height: 6px;
+  }
+
+  @include tablet {
+    position: relative;
+    margin: 0 -50px;
+    background-image: url("../img/background/background-review.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    background-position: left 0;
+    padding: 82px 0 115px 50px;
+    margin-bottom: 68px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-review@2x.jpg");
+      background-size: 350px auto;
+    }
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      content: "";
+      margin: 0;
+      background: url("../img/background/zigzag.png") no-repeat;
+      background-size: 100% 100%;
+      min-height: 17px;
+    }
+  }
+
+  @include desktop {
+    position: relative;
+    background-image: url("../img/background/background-review.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    padding: 78px 0 163px 174px;
+    margin-bottom: 71px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/background-review@2x.jpg");
+      background-size: 350px auto;
+    }
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      content: "";
+      margin: 0;
+      background: url("../img/background/zigzag-desktop.png") no-repeat;
+      background-size: 100% 100%;
+      min-height: 23px;
+    }
+  }
+}
+
+.reviews__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+
+  @include tablet {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.reviews__slider {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    position: relative;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.reviews__text {
+  margin-bottom: 33px;
+  width: 260px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+
+  @include tablet {
+    margin-bottom: 61px;
+    width: 527px;
+    font-size: 17px;
+  }
+
+  @include desktop {
+    margin-bottom: 44px;
+    width: 698px;
+    font-size: 17px;
+  }
+}
+
+.reviews__buttons {
+  margin-bottom: 45px;
+
+  @include tablet {
+    position: absolute;
+    top: 150px;
+    right: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    //top: 150px;//
+    right: -13px;
+  }
+}
+
+.reviews__send {
+  background-color: #ffffff;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  padding: 16px 78px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #444444;
+  text-transform: uppercase;
+
+  @include tablet {
+    position: absolute;
+    bottom: 210px;
+    right: 34px;
+    padding: 16px 26px;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: -64px;
+    right: 34px;
+    padding: 16px 26px;
+  }
+
+  &:hover {
+    background-color: #444444;
+    border: 2px solid #444444;
+    color: #ffffff;
+  }
+
+  &:disabled {
+    background-color: #444444;
+    border: 2px solid #444444;
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}

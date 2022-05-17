@@ -1,0 +1,23 @@
+.fresh__item {
+  list-style-type: none;
+
+  &:first-child {
+    margin-right: 36px;
+  }
+}
+
+.fresh__link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}

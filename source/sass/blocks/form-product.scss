@@ -1,0 +1,70 @@
+.form-product {
+  list-style-type: none;
+}
+
+.form-product__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-product__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form-product__style {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #444444;
+  cursor: pointer;
+
+  @include tablet {
+    width: 52px;
+    height: 52px;
+  }
+
+  @include desktop {
+    width: 52px;
+    height: 52px;
+  }
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:disabled {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+}
+
+.form-product__input:checked + .form-product__style::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: #62d1ba;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+
+  @include tablet {
+    width: 22px;
+    height: 22px;
+  }
+
+  @include desktop {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.form-product__title {
+  padding-left: 61px;
+}
