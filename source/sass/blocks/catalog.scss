@@ -1,4 +1,4 @@
-.form__hero {
+.catalog__hero {
   margin: 0 -30px;
   background-color: #f1f1f1;
   min-width: 320px;
@@ -9,7 +9,7 @@
   @include tablet {
     margin: 0 -50px;
     position: relative;
-    min-height: 213px;
+    min-height: 226px;
 
     &::after {
       content: "";
@@ -18,7 +18,7 @@
       z-index: 99;
       left: 0;
       width: 100vw;
-      background: url("../../../img/background/zigzag-hero.png") no-repeat;
+      background: url("../../img/background/zigzag-hero.png") no-repeat;
       background-size: 100% 100%;
       min-height: 24px;
     }
@@ -27,7 +27,7 @@
   @include desktop {
     margin: 0 -50px;
     position: relative;
-    min-height: 237px;
+    min-height: 255px;
 
     &::after {
       content: "";
@@ -35,15 +35,15 @@
       bottom: -12px;
       z-index: 99;
       left: 0;
-      width: 100vw;
-      background: url("../../../img/background/zigzag-hero.png") no-repeat;
+      width: 100%;
+      background: url("../../img/background/zigzag-hero.png") no-repeat;
       background-size: 100% 100%;
       min-height: 24px;
     }
   }
 }
 
-.form__news {
+.catalog__news {
   display: none;
 
   @include tablet {
@@ -57,7 +57,7 @@
   }
 }
 
-.form__delivery {
+.catalog__delivery {
   display: none;
 
   @include tablet {
@@ -83,7 +83,7 @@
   }
 }
 
-.form__title {
+.catalog__title {
   justify-self: center;
   align-self: center;
   margin: auto;
@@ -103,25 +103,23 @@
   }
 }
 
-.form__description {
-  margin: 17px 0 29px 0;
-  width: 260px;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 24px;
-  color: #444444;
+.catalog__list {
+  margin: 30px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
 
   @include tablet {
-    margin: 54px 0 13px 0;
-    width: 668px;
-    font-size: 17px;
-    line-height: 30px;
+    margin: 67px auto 53px auto;
+    width: 669px;
+    flex-direction: column;
   }
 
   @include desktop {
-    margin: 98px 237px 13px 146px;
-    width: 702px;
-    font-size: 17px;
-    line-height: 30px;
+    margin: 111px auto 57px auto;
+    display: grid;
+    grid-template-columns: 316px 316px 316px;
+    gap: 66px;
+    justify-content: center;
   }
 }

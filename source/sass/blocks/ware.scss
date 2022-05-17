@@ -15,9 +15,23 @@
 
   @include desktop {
     margin: 0;
-    width: 316px;
+    min-width: 316px;
     flex-direction: column;
   }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 316px;
+    width: 100%;
+  }
+
+}
+
+.ware:nth-child(2) picture{
+  padding-right: 4px;
 }
 
 .ware:last-child {

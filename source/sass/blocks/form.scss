@@ -1,4 +1,4 @@
-.catalog__hero {
+.form__hero {
   margin: 0 -30px;
   background-color: #f1f1f1;
   min-width: 320px;
@@ -9,7 +9,7 @@
   @include tablet {
     margin: 0 -50px;
     position: relative;
-    min-height: 226px;
+    min-height: 213px;
 
     &::after {
       content: "";
@@ -27,7 +27,7 @@
   @include desktop {
     margin: 0 -50px;
     position: relative;
-    min-height: 255px;
+    min-height: 237px;
 
     &::after {
       content: "";
@@ -35,7 +35,7 @@
       bottom: -12px;
       z-index: 99;
       left: 0;
-      width: 100vw;
+      width: 100%;
       background: url("../../../img/background/zigzag-hero.png") no-repeat;
       background-size: 100% 100%;
       min-height: 24px;
@@ -43,7 +43,7 @@
   }
 }
 
-.catalog__news {
+.form__news {
   display: none;
 
   @include tablet {
@@ -57,7 +57,7 @@
   }
 }
 
-.catalog__delivery {
+.form__delivery {
   display: none;
 
   @include tablet {
@@ -83,7 +83,7 @@
   }
 }
 
-.catalog__title {
+.form__title {
   justify-self: center;
   align-self: center;
   margin: auto;
@@ -103,22 +103,27 @@
   }
 }
 
-.catalog__list {
-  margin: 30px;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
+.form__description {
+  margin: 17px 0 29px 0;
+  width: 260px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
 
   @include tablet {
-    margin: 67px auto 53px auto;
-    width: 669px;
-    flex-direction: column;
+    margin: 54px 0 13px 0;
+    width: 668px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @include desktop {
-    margin: 111px 0 57px 0;
-    display: grid;
-    grid-template-columns: 316px 316px 316px;
-    gap: 66px;
+    display: flex;
+    justify-content: center;
+    margin: 98px 237px 13px 146px;
+    width: 702px;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

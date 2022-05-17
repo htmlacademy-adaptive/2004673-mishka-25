@@ -17,6 +17,7 @@
   width: 38px;
   height: 38px;
   border: 2px solid #444444;
+  cursor: pointer;
 
   @include tablet {
     width: 52px;
@@ -40,17 +41,17 @@
 .palette__input:checked + .palette__style {
   border-color: #444444;
   background-color: #ffffff;
-  background-image: url("/img/background/tick-mobile.png");
+  background-image: url("../img/background/tick-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   @include tablet {
-    background-image: url("/img/background/tick-tablet.png");
+    background-image: url("../img/background/tick-tablet.png");
     background-color: #f1f1f1;
   }
 
   @include desktop {
-    background-image: url("/img/background/tick-tablet.png");
+    background-image: url("../img/background/tick-tablet.png");
     background-color: #f1f1f1;
   }
 
