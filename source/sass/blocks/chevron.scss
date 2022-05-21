@@ -18,7 +18,8 @@
   background-color: #ffffff;
   border: 2px solid #ececec;
   box-sizing: border-box;
-  padding: 11px 40px 11px 36px;
+  padding: 11px 40px 11px 40px;
+  min-width: 50px;
 
   @include tablet {
     border: none;
@@ -31,6 +32,8 @@
 
 .chevron__item:first-child {
   margin-right: -6px;
+  z-index: 99;
+  min-width: 50px;
 
   @include tablet {
     margin-right: -43px;

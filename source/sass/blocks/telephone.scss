@@ -10,6 +10,7 @@
 
   @include desktop {
     flex-direction: row;
+    margin-right: 140px;
   }
 }
 
@@ -30,31 +31,54 @@
   }
 }
 
+.telephone__field {
+  position: relative;
+}
+
+.telephone__image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0.88rem;
+  cursor: pointer;
+  color: #bdbdbd;
+  transition: color 0.15s ease-in-out;
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+    fill: #62d1ba;
+  }
+
+  &:active {
+    opacity: 1;
+    fill: #62d1ba;
+  }
+}
+
 .telephone__input {
   padding: 14px 10px 16px 0;
   height: 52px;
   min-width: 260px;
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
 
   @include tablet {
-    padding: 14px 22px 10px 0;
+    padding: 14px 22px 10px 17px;
     background-color: #f1f1f1;
     min-width: 501px;
   }
 
   @include desktop {
-    padding: 14px 4px 10px 0;
+    padding: 14px 4px 10px 17px;
     background-color: #f1f1f1;
     min-width: 700px;
-  }
-
-  &:hover {
-    box-shadow: inset 0 -2px 0 #62d1ba;
-  }
-
-  &:active {
-    box-shadow: inset 0 -2px 0 #62d1ba;
   }
 }
 
@@ -63,25 +87,6 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
-  background-image: url("../img/background/phone.png");
-  background-repeat: no-repeat;
-  background-position: right;
-
-  @include tablet {
-    padding: 14px 26px 20px 17px;
-  }
-
-  @include desktop {
-    padding: 14px 26px 8px 17px;
-  }
-
-  &:hover {
-    background-image: url("../img/background/phone-active.png");
-  }
-
-  &:active {
-    background-image: url("../img/background/phone-active.png");
-  }
 }
 
 .telephone__input::-webkit-input-placeholder {
@@ -89,23 +94,4 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
-  background-image: url("../img/background/phone.png");
-  background-repeat: no-repeat;
-  background-position: right;
-
-  @include tablet {
-    padding: 14px 26px 20px 17px;
-  }
-
-  @include desktop {
-    padding: 14px 26px 8px 17px;
-  }
-
-  &:hover {
-    background-image: url("../img/background/phone-active.png");
-  }
-
-  &:active {
-    background-image: url("../img/background/phone-active.png");
-  }
 }

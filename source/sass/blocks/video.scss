@@ -1,10 +1,11 @@
 .video {
+  position: relative;
   display: grid;
   grid-template-areas:
     "video__box-title"
     "video__image"
     "video__box-description";
-  margin: 0 30px 58px 0;
+  margin-bottom: 58px;
   border: 1px solid #ececec;
   background-color: #ffffff;
   width: 260px;
@@ -15,6 +16,7 @@
       "video__box-title"
       "video__box__description";
     width: 668px;
+    margin: 0 auto 64px auto;
   }
 
   @include desktop {
@@ -96,6 +98,14 @@
     margin-left: 0;
     font-size: 20px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .video__description {
@@ -153,5 +163,32 @@
     background-color: #444444;
     border: 2px solid #444444;
     color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}
+
+.video__play {
+  position: absolute;
+  top: 129px;
+  left: 81px;
+
+  @include tablet {
+    top: 197px;
+    left: 290px;
+  }
+
+  @include desktop {
+    top: 189px;
+    left: 281px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
+
+  &:disabled {
+    transform: scale(0.8);
+    transition: 0.2s;
+    opacity: 0.6;
   }
 }

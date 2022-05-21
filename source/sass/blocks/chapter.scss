@@ -28,6 +28,18 @@
   height: 52px;
   border: none;
   box-shadow: inset 0 -2px 0 #000000;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+
+  @include tablet {
+    padding-left: 17px;
+  }
+
+  @include desktop {
+    padding-left: 17px;
+  }
 
   &:hover {
     box-shadow: inset 0 -2px 0 #62d1ba;
@@ -43,14 +55,6 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
-
-  @include tablet {
-    padding: 16px 18px;
-  }
-
-  @include desktop {
-    padding: 16px 18px;
-  }
 }
 
 .chapter__input::-webkit-input-placeholder {
@@ -58,14 +62,6 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
-
-  @include tablet {
-    padding: 16px 18px;
-  }
-
-  @include desktop {
-    padding: 16px 18px;
-  }
 }
 
 .chapter:first-child .chapter__input {

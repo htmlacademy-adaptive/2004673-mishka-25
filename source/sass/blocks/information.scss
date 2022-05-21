@@ -1,5 +1,11 @@
 .information {
-  margin: 31px 0 28px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 31px auto 28px auto;
+
+  @include tablet {
+    margin-top: 124px;
+  }
 
   @include desktop {
     margin: 68px 0 90px 175px;

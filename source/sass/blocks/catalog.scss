@@ -1,10 +1,12 @@
 .catalog__hero {
-  margin: 0 -30px;
+  margin: 0 auto;
   background-color: #f1f1f1;
   min-width: 320px;
+  width: 100vw;
   min-height: 177px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include tablet {
     margin: 0 -50px;
@@ -25,7 +27,7 @@
   }
 
   @include desktop {
-    margin: 0 -50px;
+    margin: 0;
     position: relative;
     min-height: 255px;
 
@@ -104,10 +106,11 @@
 }
 
 .catalog__list {
-  margin: 30px;
+  margin: 30px auto;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @include tablet {
     margin: 67px auto 53px auto;

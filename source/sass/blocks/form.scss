@@ -1,7 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__hero {
   margin: 0 -30px;
   background-color: #f1f1f1;
-  min-width: 320px;
+  width: 100vw;
   min-height: 177px;
   display: flex;
   flex-direction: column;
@@ -121,9 +127,10 @@
   @include desktop {
     display: flex;
     justify-content: center;
-    margin: 98px 237px 13px 146px;
+    margin: 98px 0 13px 0;
     width: 702px;
     font-size: 17px;
     line-height: 30px;
+    max-width: 1050px;
   }
 }

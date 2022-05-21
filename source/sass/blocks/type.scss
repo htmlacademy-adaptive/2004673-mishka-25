@@ -7,14 +7,17 @@
 
   @include tablet {
     flex-direction: row;
-    align-items: flex-start;
     padding: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   @include desktop {
     flex-direction: row;
-    align-items: flex-start;
     padding: 50px 95px 49px 97px;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -29,10 +32,12 @@
 
   @include tablet {
     margin: 0 0 0 103px;
+    min-width: 530px;
   }
 
   @include desktop {
     margin: 0 0 0 63px;
+    min-width: 824px;
   }
 }
 

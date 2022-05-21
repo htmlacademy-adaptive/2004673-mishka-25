@@ -1,22 +1,26 @@
 .product {
-  margin-top: 71px;
   display: flex;
   flex-direction: column;
+  margin: 31px auto 0 auto;
 
   &::after {
     content: "";
     margin: 36px -30px 0 -30px;
+    width: 100%;
+    min-width: 320px;
     background: url("../img/background/zigzag.png") no-repeat;
     background-size: 100% 100%;
     min-height: 6px;
   }
 
   @include tablet {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
     background-image: url("../img/background/background-basket.jpg");
     background-repeat: no-repeat;
     background-size: 334px 404px;
     background-position: right 150px;
-    margin-right: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-basket@2x.jpg");
@@ -24,8 +28,12 @@
     }
 
     &::after {
+      position: absolute;
+      left: -50px;
+      bottom: -69px;
+      margin: 0;
+      min-width: 768px;
       content: "";
-      margin: 52px -50px 0 -50px;
       background: url("../img/background/zigzag-desktop.png") no-repeat;
       background-size: 100% 100%;
       min-height: 17px;
@@ -33,12 +41,16 @@
   }
 
   @include desktop {
+    display: flex;
+    max-width: 1050px;
+    width: 100%;
+    justify-content: center;
     position: relative;
     background-image: url("../img/background/background-basket.jpg");
     background-repeat: no-repeat;
     background-size: 525px 636px;
-    background-position: 92% -12px;
-    margin-right: -50px;
+    background-position: right -12px;
+    margin-top: 71px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/background-basket@2x.jpg");
@@ -58,7 +70,7 @@
 .product__box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3px;
+  margin: 0 auto 3px auto;
 
   @include tablet {
     margin: 46px 13px 50px 0;
@@ -71,8 +83,7 @@
     max-width: 800px;
     flex-direction: row;
     align-items: center;
-    margin-top: 61px;
-    margin-bottom: 35px;
+    margin: 61px 0 35px 0;
   }
 }
 
@@ -122,6 +133,7 @@
 .product__container {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   @include tablet {
     padding-right: 376px;
@@ -130,6 +142,7 @@
   @include desktop {
     width: 467px;
     padding-left: 175px;
+    margin: 0;
   }
 }
 
