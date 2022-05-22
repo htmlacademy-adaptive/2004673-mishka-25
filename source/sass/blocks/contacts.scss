@@ -1,5 +1,8 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
   margin: 0 -30px;
+  align-items: center;
   position: relative;
 
   @include tablet {
@@ -7,21 +10,31 @@
   }
 
   @include desktop {
-    margin: 0;
+    display: grid;
+    grid-template-areas:
+      "contacts__container contacts__map"
+      "contacts__list contacts__map"
+      "contacts__button contacts__map";
+    min-width: 1050px;
+    justify-content: space-between;
+    margin: 0 0 105px 0;
   }
 }
 
 .contacts__container {
+  min-width: 260px;
   margin: 38px 0 28px 30px;
 
   @include tablet {
-    margin: 46px 0 49px 50px;
+    min-width: 668px;
+    margin: 68px 0 49px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   @include desktop {
+    grid-area: contacts__container;
     margin: 133px 0 27px 61px;
     display: flex;
     align-items: center;
@@ -66,12 +79,15 @@
   flex-direction: column;
 
   @include tablet {
-    margin: 0 0 49px 50px;
+    min-width: 668px;
+    margin-bottom: 49px;
+    margin-left: 0;
     flex-direction: row;
   }
 
   @include desktop {
-    margin: 0 0 84px 174px;
+    grid-area: contacts__list;
+    margin: 0 0 76px 174px;
     flex-direction: column;
   }
 }
@@ -81,6 +97,7 @@
 }
 
 .contacts__item:first-child {
+  height: 100%;
   margin-bottom: 25px;
 
   @include tablet {
@@ -106,6 +123,7 @@
   line-height: 30px;
   color: #444444;
   border-bottom: 1px solid #62d1ba;
+  cursor: pointer;
 
   @include tablet {
     font-size: 17px;
@@ -138,21 +156,19 @@
   margin-bottom: 41px;
   display: block;
   border: none;
-  width: 320px;
+  width: 100vw;
 
   @include tablet {
-    width: 768px;
+    width: 100vw;
     height: 457px;
     margin: 0 -50px 55px -50px;
   }
 
   @include desktop {
+    grid-area: contacts__map;
     margin: 0;
     width: 527px;
     height: 457px;
-    position: absolute;
-    top: -67px;
-    right: -2px;
   }
 }
 
@@ -168,6 +184,7 @@
   font-size: 18px;
   line-height: 20px;
   color: #444444;
+  cursor: pointer;
 
   @include tablet {
     font-size: 17px;
@@ -176,9 +193,11 @@
   }
 
   @include desktop {
+    grid-area: contacts__button;
     font-size: 17px;
     margin: 0 0 57px 174px;
     padding: 16px 27px;
+    max-width: 230px;
   }
 
   &:hover {

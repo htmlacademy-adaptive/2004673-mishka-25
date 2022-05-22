@@ -4,13 +4,14 @@
 
   @include tablet {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px 50px 53px 50px;
   }
 
   @include desktop {
     flex-direction: row;
-    padding: 50px 95px 50px 97px;
+    padding: 50px 0 50px 0;
+    justify-content: center;
   }
 }
 
@@ -35,10 +36,14 @@
 
 .additionally__input {
   padding: 17px;
-  width: 260px;
   min-height: 142px;
   border: 2px solid #444444;
   resize: vertical;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  width: 100%;
 
   @include tablet {
     margin-left: 99px;
@@ -56,6 +61,12 @@
 
   &:active {
     border: 2px solid #62d1ba;
+  }
+}
+
+.additionally__box {
+  @include desktop {
+    margin-right: 140px;
   }
 }
 

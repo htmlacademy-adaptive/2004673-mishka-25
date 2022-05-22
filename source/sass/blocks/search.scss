@@ -30,17 +30,9 @@
   left: 32px;
   max-width: 18px;
   max-height: 18px;
+  fill: rgba(0, 0, 0, 0.2);
 
   @include desktop {
     top: 36px;
-  }
-
-  &:hover {
-    fill: #63d1bb;
-  }
-
-  &:disabled {
-    fill: #63d1bb;
-    opacity: 0.3;
   }
 }

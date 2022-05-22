@@ -11,21 +11,26 @@
     flex-direction: row;
     background-color: #f1f1f1;
     padding: 50px;
-    margin: 0;
+    margin: 0 auto;
+    width: 100vw;
+    justify-content: center;
   }
 
   @include desktop {
     flex-direction: row;
+    justify-content: center;
     background-color: #f1f1f1;
-    padding: 48px 95px 52px 97px;
+    padding: 43px 0 39px 0;
     margin: 0;
+    width: 100vw;
   }
 }
 
 .colors__container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  margin-top: 18px;
 }
 
 .colors__list {
@@ -43,7 +48,7 @@
   }
 
   @include desktop {
-    margin-top: 0;
+    margin-top: 20px;
     margin-left: 55px;
     display: grid;
     grid-template-columns: 249px 249px 304px;

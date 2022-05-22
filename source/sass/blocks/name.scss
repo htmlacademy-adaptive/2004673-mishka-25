@@ -5,14 +5,15 @@
 
   @include tablet {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px;
     margin: 0;
   }
 
   @include desktop {
     flex-direction: row;
-    padding: 48px 95px 52px 97px;
+    justify-content: center;
+    padding: 48px 0 52px 0;
     margin: 0;
   }
 }
@@ -44,5 +45,6 @@
 
   @include desktop {
     margin-left: 60px;
+    margin-right: 140px;
   }
 }
