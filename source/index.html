@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishka</title>
+    <link rel="preload" href="./css/style.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="./js/script.js" as="script" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="./favicon.ico">
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/Favicon-apple.png">
@@ -113,15 +119,15 @@
             </li>
           </ul>
           <p class="hero__delivery">Бесплатная доставка по России</p>
-          <h1 class="hero__title">Милые штуки ручной<br> работы для дома</h1>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <a class="hero__link">Предметы интерьера</a>
-            </li>
-            <li class="hero__item">
-              <a class="hero__link">Детские игрушки</a>
-            </li>
-          </ul>
+          <h1 class="hero__title">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
+          <div class="hero__list">
+            <a class="hero__item">
+              <p class="hero__link">Предметы интерьера</p>
+            </a>
+            <a class="hero__item">
+              <p class="hero__link">Детские игрушки</p>
+            </a>
+          </div>
         </section>
         <section class="product">
           <div class="product__box">
@@ -129,7 +135,7 @@
             <p class="product__top">Товар недели</p>
           </div>
           <div class="product__container">
-            <p class="product__description">Экологически чистая пряжа,<br>ручная работа. Доступны в шести<br>расцветках
+            <p class="product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках
             и трёх размерах.</p>
             <table class="product__table">
               <tr class="product__row">
@@ -154,28 +160,28 @@
           <h2 class="information__title">Коротко о нас:</h2>
           <ul class="information__list">
             <li class="information__item">
-              <img src="./img/background/flower.png" alt="Цветок.">
-              <p>Экологически<br> чистые материалы</p>
+              <img class="information__image" src="./img/background/flower.png" width="33" height="38" alt="Цветок.">
+              <p class="information__text">Экологически чистые&nbsp;материалы</p>
             </li>
             <li class="information__item">
-              <img src="./img/background/money.png" alt="Банкнота.">
-              <p>Скандинавский стиль<br> по российской цене</p>
+              <img class="information__image" src="./img/background/money.png" width="47" height="27" alt="Банкнота.">
+              <p class="information__text">Скандинавский стиль по&nbsp;российской цене</p>
             </li>
             <li class="information__item">
-              <img src="./img/background/heart.png" alt="Сердце.">
-              <p>Увеличивает лайки<br> на фотографиях</p>
+              <img class="information__image" src="./img/background/heart.png" width="34" height="27" alt="Сердце.">
+              <p class="information__text">Увеличивает лайки на&nbsp;фотографиях</p>
             </li>
             <li class="information__item">
-              <img src="./img/background/ball.png" alt="Клубок.">
-              <p>Связано вручную<br> с любовью и умилением</p>
+              <img class="information__image" src="./img/background/ball.png" width="35" height="34" alt="Клубок.">
+              <p class="information__text">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением</p>
             </li>
             <li class="information__item">
-              <img src="./img/background/rocket.png" alt="Ракета.">
-              <p>Поддержка отечественного<br> производителя</p>
+              <img class="information__image" src="./img/background/rocket.png" width="55" height="23" alt="Ракета.">
+              <p class="information__text">Поддержка отечественного производителя</p>
             </li>
             <li class="information__item">
-              <img src="./img/background/present.png" alt="Подарок.">
-              <p>Поставляется<br> в подарочной упаковке</p>
+              <img class="information__image" src="./img/background/present.png" width="33" height="32" alt="Подарок.">
+              <p class="information__text">Поставляется в&nbsp;подарочной&nbsp;упаковке</p>
             </li>
           </ul>
         </section>
@@ -225,7 +231,7 @@
             </li>
             <li class="contacts__item">
               <p class="contacts__name">адрес:</p>
-              <p class="contacts__description">г. Санкт-Петербург <br>ул. Большая Конюшенная <br>д. 19/8, офис 101</p>
+              <p class="contacts__description">г. Санкт-Петербург ул.&nbsp;Большая Конюшенная д. 19/8, офис 101</p>
             </li>
           </ul>
           <iframe class="contacts__map"
@@ -279,9 +285,12 @@
         <hr class="footer__hr">
         <div class="footer__author author">
           <p class="author__text">Разработано</p>
-          <svg class="author__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
-          </svg>
+          <a class="authot__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="author__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
+            </svg>
+            <span class="visually-hidden">HTML Academy.</span>
+          </a>
         </div>
       </footer>
       <div class="modal modal-close">

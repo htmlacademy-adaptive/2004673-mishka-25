@@ -3,7 +3,7 @@
   display: grid;
   grid-template-areas:
     "video__box-title"
-    "video__image"
+    "video__container"
     "video__box-description";
   margin-bottom: 58px;
   border: 1px solid #ececec;
@@ -12,7 +12,7 @@
 
   @include tablet {
     grid-template-areas:
-      "video__image"
+      "video__container"
       "video__box-title"
       "video__box__description";
     width: 668px;
@@ -21,10 +21,9 @@
 
   @include desktop {
     grid-template-areas:
-      "video__image video__box-title"
-      "video__image video__box-description";
+      "video__container video__box-title"
+      "video__container video__box-description";
     width: 1080px;
-    margin: 0 auto 58px auto;
   }
 
   &:hover {
@@ -51,7 +50,7 @@
   @include desktop {
     margin-bottom: 0;
     width: 682px;
-    height: 457px;
+    height: 100%;
   }
 }
 
@@ -157,12 +156,26 @@
     background-color: #444444;
     border: 2px solid #444444;
     color: #ffffff;
+    cursor: pointer;
   }
 
   &:disabled {
     background-color: #444444;
     border: 2px solid #444444;
     color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}
+
+.video__container {
+  grid-area: video__container;
+  cursor: pointer;
+}
+
+.video__container:hover {
+  & .video__play {
+    transform: scale(1.2);
+    transition: 0.2s;
+    cursor: pointer;
   }
 }
 
@@ -179,11 +192,6 @@
   @include desktop {
     top: 189px;
     left: 281px;
-  }
-
-  &:hover {
-    transform: scale(1.2);
-    transition: 0.2s;
   }
 
   &:disabled {

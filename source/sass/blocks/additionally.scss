@@ -38,6 +38,7 @@
   padding: 17px;
   min-height: 142px;
   border: 2px solid #444444;
+  font-family: inherit;
   resize: vertical;
   font-weight: 400;
   font-size: 19px;
@@ -62,15 +63,24 @@
   &:active {
     border: 2px solid #62d1ba;
   }
+
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
 }
 
 .additionally__box {
+  @include tablet {
+    margin-right: 40px;
+  }
+
   @include desktop {
     margin-right: 140px;
   }
 }
 
 .additionally__input::placeholder {
+  font-family: inherit;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
@@ -78,6 +88,7 @@
 }
 
 .additionally__input::-webkit-input-placeholder {
+  font-family: inherit;
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;

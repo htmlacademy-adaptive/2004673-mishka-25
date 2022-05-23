@@ -14,15 +14,31 @@
 }
 
 .menu__icon-close {
-  display: block;
+  display: none;
 }
 
 .menu__icon-open {
-  display: none;
+  display: block;
 }
 
 @include mobile {
   .menu__nojs .menu__button {
+    display: block;
+  }
+
+  .menu__nojs .menu__item {
+    display: block;
+  }
+
+  .menu__close .menu__wrapper {
+    display: none;
+  }
+
+  .menu__nojs .menu__icon-close {
+    display: block;
+  }
+
+  .menu__nojs .menu__icon-open {
     display: none;
   }
 
@@ -31,10 +47,6 @@
     display: flex;
     min-height: 0;
     margin: 0 -30px;
-  }
-
-  .menu__nojs .menu__item {
-    display: block;
   }
 }
 
@@ -180,6 +192,6 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.menu__item:hover .menu__link svg {
+.menu__item:hover svg {
   fill: #63d1bb;
 }

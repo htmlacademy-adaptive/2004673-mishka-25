@@ -4,11 +4,11 @@
   align-items: center;
 
   @include tablet {
-    margin: 22px 0 0 0;
+    margin: 0;
   }
 
   @include desktop {
-    margin: 22px 0 0 0;
+    margin: 0;
   }
 }
 
