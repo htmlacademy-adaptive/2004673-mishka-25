@@ -39,7 +39,8 @@
   flex-direction: column;
 
   @include tablet {
-    margin-left: 97px;
+    margin-left: 90px;
+    margin-right: 35px;
     justify-content: space-between;
   }
 

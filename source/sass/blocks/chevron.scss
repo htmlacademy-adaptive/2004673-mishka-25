@@ -18,7 +18,7 @@
   background-color: #ffffff;
   border: 2px solid #ececec;
   box-sizing: border-box;
-  padding: 11px 40px 11px 40px;
+  padding: 11px 38px 11px 38px;
   min-width: 50px;
 
   @include tablet {
@@ -46,4 +46,5 @@
 
 .chevron__item svg:hover {
   opacity: 0.6;
+  cursor: pointer;
 }

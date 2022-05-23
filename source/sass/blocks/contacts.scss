@@ -107,12 +107,14 @@
 }
 
 .contacts__description {
+  max-width: 183px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #444444;
 
   @include tablet {
+    max-width: 218px;
     font-size: 17px;
   }
 }

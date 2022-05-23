@@ -40,7 +40,7 @@
   @include tablet {
     display: grid;
     grid-template-columns: 265px 325px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: auto auto auto;
     column-gap: 100px;
     row-gap: 59px;
     grid-auto-flow: column;
@@ -50,7 +50,7 @@
   @include desktop {
     display: grid;
     grid-template-columns: 265px 325px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: auto auto auto;
     column-gap: 100px;
     row-gap: 59px;
     grid-auto-flow: column;
@@ -58,19 +58,33 @@
 }
 
 .information__item {
+  margin-bottom: 30px;
+  max-width: 260px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  margin-bottom: 30px;
 
   @include tablet {
+    margin: 0;
+    max-width: 325px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @include desktop {
     margin: 0;
+    max-width: 325px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
-.information__item img {
+.information__image {
   margin-bottom: 20px;
+}
+
+.information__text {
+  display: flex;
+  min-height: 44px;
 }
