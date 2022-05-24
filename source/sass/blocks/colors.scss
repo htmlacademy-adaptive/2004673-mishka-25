@@ -28,13 +28,20 @@
 
 .colors__container {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 18px;
+
+  @include tablet {
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    align-items: flex-start;
+  }
 }
 
 .colors__list {
-  margin-top: 25px;
+  margin-top: 33px;
   list-style-type: none;
 
   @include tablet {

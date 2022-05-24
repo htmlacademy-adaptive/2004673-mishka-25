@@ -4,13 +4,13 @@
   align-items: center;
   margin: 0 -30px;
   background-color: #f1f1f1;
-  height: 160px;
+  min-height: 160px;
 
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 143px;
+    min-height: 143px;
     margin: 0 -50px;
     padding: 51px 50px 58px 50px;
   }
@@ -19,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 143px;
+    min-height: 143px;
     margin: 0 -50px;
     padding: 51px 50px 58px 50px;
   }

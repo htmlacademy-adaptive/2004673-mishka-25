@@ -61,14 +61,14 @@
 }
 
 .mail__input {
-  padding: 16px 0 18px 0;
+  padding: 16px 21px 18px 0;
   height: 52px;
   min-width: 260px;
   border: none;
   outline: none;
   border-bottom: 2px solid #000000;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 18px;
   color: #444444;
 
@@ -76,12 +76,14 @@
     background-color: #f1f1f1;
     min-width: 501px;
     padding: 16px 22px 18px 17px;
+    font-size: 19px;
   }
 
   @include desktop {
     background-color: #f1f1f1;
     min-width: 700px;
     padding: 16px 4px 18px 17px;
+    font-size: 19px;
   }
 
   &:hover {
@@ -102,6 +104,14 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
+
+  @include tablet {
+    font-size: 19px;
+  }
+
+  @include desktop {
+    font-size: 19px;
+  }
 }
 
 .mail__input::-webkit-input-placeholder {
@@ -109,4 +119,16 @@
   font-size: 17px;
   line-height: 18px;
   color: rgba($color: #000000, $alpha: 0.3);
+
+  @include tablet {
+    font-size: 19px;
+  }
+
+  @include desktop {
+    font-size: 19px;
+  }
+}
+
+.mail__hr {
+  width: 182px;
 }
