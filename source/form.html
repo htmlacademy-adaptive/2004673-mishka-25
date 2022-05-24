@@ -20,7 +20,7 @@
     <div class="container">
       <header class="header">
         <nav class="navigation">
-          <div class="navigation__menu menu__close menu__nojs">
+          <div class="navigation__menu navigation__menu-close navigation__menu-nojs">
             <div class="navigation__container">
               <a class="navigation__logo logo" href="./index.html">
                 <svg class="logo__icon logo__mobile" width="86" height="35" viewBox="0 0 86 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,19 +65,19 @@
                   <path d="M49.1327 24.9844C49.6361 24.8856 50.24 24.7869 50.6427 24.4908C50.7434 24.3921 50.844 24.3921 50.9447 24.2934C51.448 23.9972 51.9513 23.5037 51.6493 22.9114C51.146 21.8255 51.2467 20.641 51.2467 19.5551C51.2467 18.568 50.24 18.2719 49.4347 18.3706C48.7301 18.4693 47.2201 18.9628 47.2201 19.8513C47.2201 20.8384 47.1195 21.8255 47.3208 22.8127C47.3208 22.9114 47.2201 23.0101 47.2201 23.2075C47.1195 23.4049 47.2201 23.6024 47.3208 23.7998V23.8985C47.3208 23.9972 47.3208 24.0959 47.3208 24.1946C47.4215 24.3921 47.5221 24.5895 47.7234 24.6882C48.1261 24.9844 48.6294 24.9844 49.1327 24.9844Z" fill="white"/>
                 </svg>
               </a>
-              <button class="menu__button">
-                <svg class="menu__icon-open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="navigation__button">
+                <svg class="navigation__icon-open" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
                   <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
                   <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
                 </svg>
-                <svg class="menu__icon-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="navigation__icon-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
                 </svg>
                 <span class="visually-hidden">Меню.</span>
               </button>
             </div>
-            <div class="menu__wrapper">
+            <div class="navigation__wrapper menu">
               <ul class="menu__links">
                 <li class="menu__item">
                   <a class="menu__link" href="./catalog.html">Каталог товаров</a>
@@ -227,6 +227,7 @@
                   <label class="visually-hidden" for="tel">Номер телефона.</label>
                   <div class="telephone__field">
                     <input class="telephone__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+                    maxlength="12"
                     placeholder="+7 ХХХ ХХХ ХХ ХХ*"
                     required>
                     <span class="telephone__image">
@@ -250,7 +251,7 @@
                 <div class="mail__box">
                   <label class="visually-hidden" for="e-mail">Ваш Email.</label>
                   <div class="mail__field">
-                    <input class="mail__input" type="email" id="e-mail" placeholder="Ваш Email*" required>
+                    <input class="mail__input" type="email" id="e-mail" maxlength="25" placeholder="Ваш Email*" required>
                     <span class="mail__image">
                       <svg width="32" height="21" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg">
                         <path d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z"/>

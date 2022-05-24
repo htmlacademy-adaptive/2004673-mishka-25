@@ -99,7 +99,9 @@
 .details-title-hr {
   width: 200px;
   height: 1px;
-  border: 1px solid #63d1ba;
+  background-color: #63d1ba;
+  border: none;
+  outline: none;
 
   @include tablet {
     display: none;
