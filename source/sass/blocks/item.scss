@@ -1,6 +1,6 @@
 .item {
   background-color: #ffffff;
-  padding: 28px 22px 26px 28px;
+  padding: 20px 26px 26px 26px;
 
   @include tablet {
     width: 335px;
@@ -18,6 +18,14 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -37,10 +45,12 @@
 
   @include tablet {
     margin-bottom: 169px;
+    font-size: 15px;
   }
 
   @include desktop {
     margin-bottom: 36px;
+    font-size: 15px;
   }
 }
 

@@ -1,7 +1,7 @@
 //common//
-@import "./blocks/common/mixins.scss";
-@import "./blocks/common/condition.scss";
-@import "./blocks/common/font-face.scss";
+@import "common/mixins.scss";
+@import "common/condition.scss";
+@import "common/font-face.scss";
 @import "../sass/base.scss";
 @import "blocks/popover";
 @import "blocks/header";
@@ -35,6 +35,8 @@
 @import "blocks/mail";
 @import "blocks/additionally";
 @import "blocks/palette";
+@import "blocks/details-title.scss";
+@import "blocks/details-name.scss";
 
 //index//
 @import "blocks/hero";

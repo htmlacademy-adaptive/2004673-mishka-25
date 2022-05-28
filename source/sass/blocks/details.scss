@@ -20,11 +20,11 @@
 .details__box {
   display: flex;
   flex-direction: column;
-  margin-top: 17px;
+  margin-top: 11px;
 
   @include tablet {
-    margin: 0 45px 0 0;
-    padding: 0 50px 50px 50px;
+    margin: 0 32px 0 0;
+    padding: 0 19px 50px 50px;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -32,7 +32,7 @@
   }
 
   @include desktop {
-    margin: 0 45px 50px 0;
+    margin: 0 0 50px 0;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 }
 
 .details__description {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
@@ -49,10 +49,12 @@
 
   @include tablet {
     margin: 0;
+    font-size: 17px;
   }
 
   @include desktop {
     margin: 0;
+    font-size: 17px;
   }
 }
 
@@ -62,17 +64,18 @@
   border: 2px solid #444444;
   padding: 18px 37px;
   text-transform: uppercase;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #444444;
 
   @include tablet {
-    padding: 18px 32px;
+    padding: 16px 32px;
   }
 
   @include desktop {
-    padding: 18px 17px;
+    padding: 16px 31px;
   }
 
   &:hover {
@@ -89,46 +92,6 @@
   }
 }
 
-.details-title {
-  font-size: 17px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: #63d1bb;
-}
-
-.details-title-hr {
-  width: 200px;
-  height: 1px;
-  background-color: #63d1ba;
-  border: none;
-  outline: none;
-
-  @include tablet {
-    display: none;
-  }
-
-  @include desktop {
-    display: none;
-  }
-}
-
-.details-name {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
-
-  @include tablet {
-    font-size: 19px;
-    line-height: 18px;
-  }
-
-  @include desktop {
-    font-size: 19px;
-    line-height: 18px;
-  }
-}
-
 .details__contacts {
   display: flex;
   flex-direction: column;
@@ -136,15 +99,35 @@
 
   @include tablet {
     background-color: #f1f1f1;
-    padding: 50px;
+    padding: 50px 50px 6px 50px;
     width: 100vw;
     align-items: center;
   }
 
   @include desktop {
     background-color: #f1f1f1;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 15px 0;
     align-items: center;
     width: 100vw;
+  }
+}
+
+.details__frame {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 12px;
+    padding-bottom: 17px;
+    max-width: 668px;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 12px;
+    padding-bottom: 17px;
+    max-width: 1050px;
   }
 }

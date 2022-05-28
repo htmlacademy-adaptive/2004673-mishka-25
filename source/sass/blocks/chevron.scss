@@ -1,16 +1,20 @@
 .chevron {
-  margin-bottom: 38px;
+  margin-bottom: 33px;
 
   @include tablet {
     margin: 0;
+    display: flex;
+    position: absolute;
+    right: 32px;
+    top: 36px;
   }
 
   @include desktop {
     margin: 0;
     display: flex;
     position: absolute;
-    right: 0;
-    top: 163px;
+    right: -4px;
+    top: 141px;
   }
 }
 

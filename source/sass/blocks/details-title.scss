@@ -1,0 +1,32 @@
+.details-title {
+  position: relative;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.details-title::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  z-index: 99;
+  left: 59px;
+  width: 200px;
+  height: 1px;
+  background-color: #63d1bb;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.details-title.mail__title::after {
+  left: 77px;
+  width: 182px;
+}

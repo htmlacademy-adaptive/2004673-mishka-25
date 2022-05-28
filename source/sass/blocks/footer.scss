@@ -12,16 +12,15 @@
     align-items: center;
     min-height: 143px;
     margin: 0 -50px;
-    padding: 51px 50px 58px 50px;
+    padding: 49px 50px 58px 50px;
   }
 
   @include desktop {
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     min-height: 143px;
     margin: 0 -50px;
-    padding: 51px 50px 58px 50px;
+    padding: 50px 50px 58px 50px;
   }
 }
 
@@ -57,5 +56,22 @@
 
   @include desktop {
     display: none;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1150px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
   }
 }

@@ -1,7 +1,7 @@
 .chapter {
   display: flex;
   flex-direction: column;
-  margin-top: 22px;
+  margin-top: 29px;
 
   @include tablet {
     flex-direction: row;
@@ -10,6 +10,30 @@
 
   @include desktop {
     flex-direction: row;
+    margin: 5px 0 0 0;
+  }
+}
+
+.chapter:nth-child(2) {
+  margin-top: 25px;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
+.chapter:nth-child(3) {
+  margin-top: 20px;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
     margin: 0;
   }
 }
@@ -21,6 +45,7 @@
 
   @include desktop {
     margin-top: 14px;
+    margin-right: 14px;
   }
 }
 

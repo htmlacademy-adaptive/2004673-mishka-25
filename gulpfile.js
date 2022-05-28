@@ -74,12 +74,12 @@ const svg = () => {
 }
 
 const sprite = () => {
-  return gulp.src(['source/img/logo/*.svg', '!source/img/logo/logo-footer.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/background/zigzag-fill-desktop.svg, !source/img/background/zigzag-fill-tablet.svg, !source/img/background/zigzag-tablet.svg, !source/img/icon/tick-desktop.svg, !source/img/icon/tick-mobile.svg'])
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename('logo-sprite.svg'))
+    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
 }
 
