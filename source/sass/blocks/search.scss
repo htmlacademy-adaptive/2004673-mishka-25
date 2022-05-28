@@ -32,6 +32,10 @@
   max-height: 18px;
   fill: rgba(0, 0, 0, 0.2);
 
+  @include tablet {
+    top: 34px;
+  }
+
   @include desktop {
     top: 36px;
   }

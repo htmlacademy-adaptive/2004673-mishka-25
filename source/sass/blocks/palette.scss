@@ -42,17 +42,17 @@
 .palette__input:checked + .palette__style {
   border-color: #444444;
   background-color: #ffffff;
-  background-image: url("../img/background/tick-mobile.png");
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z' fill='black'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
   @include tablet {
-    background-image: url("../img/background/tick-tablet.png");
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='22' viewBox='0 0 33 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.3704 1.35683L31.0099 0L11.574 19.2863L1.95317 9.69163L0.592651 11.0485L10.2134 20.6432L11.574 22L13.0317 20.6432L32.3704 1.35683Z' fill='black'/%3E%3C/svg%3E");
     background-color: #f1f1f1;
   }
 
   @include desktop {
-    background-image: url("../img/background/tick-tablet.png");
+    background-image: url("data:image/svg+xml,%3Csvg width='33' height='22' viewBox='0 0 33 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.3704 1.35683L31.0099 0L11.574 19.2863L1.95317 9.69163L0.592651 11.0485L10.2134 20.6432L11.574 22L13.0317 20.6432L32.3704 1.35683Z' fill='black'/%3E%3C/svg%3E");
     background-color: #f1f1f1;
   }
 
@@ -66,5 +66,13 @@
 }
 
 .palette__title {
-  padding-left: 61px;
+  padding-left: 60px;
+
+  @include tablet {
+    padding-left: 82px;
+  }
+
+  @include desktop {
+    padding-left: 82px;
+  }
 }

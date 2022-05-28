@@ -1,20 +1,26 @@
 .name {
-  margin-bottom: 34px;
+  margin-bottom: 36px;
   display: flex;
   flex-direction: column;
 
   @include tablet {
     flex-direction: row;
-    justify-content: center;
-    padding: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 52px 0 49px 0;
     margin: 0;
+    max-width: 668px;
+    width: 100vw;
   }
 
   @include desktop {
     flex-direction: row;
-    justify-content: center;
-    padding: 48px 0 52px 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 48px 0 48px 0;
     margin: 0;
+    max-width: 1050px;
+    width: 100vw;
   }
 }
 
@@ -31,21 +37,22 @@
   @include desktop {
     align-items: flex-start;
     margin-top: 22px;
+    margin-left: 62px;
   }
 }
+
 
 .name__list {
   display: flex;
   flex-direction: column;
 
   @include tablet {
-    margin-left: 90px;
-    margin-right: 35px;
+    margin-left: 124px;
     justify-content: space-between;
   }
 
   @include desktop {
-    margin-left: 60px;
+    margin-left: 72px;
     margin-right: 140px;
   }
 }

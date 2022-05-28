@@ -68,4 +68,12 @@
 
 .form-product__title {
   padding-left: 61px;
+
+  @include tablet {
+    padding-left: 77px;
+  }
+
+  @include desktop {
+    padding-left: 78px;
+  }
 }

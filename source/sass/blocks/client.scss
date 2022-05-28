@@ -1,5 +1,5 @@
 .client {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -17,9 +17,11 @@
 .client__name {
   @include tablet {
     font-size: 18px;
+    margin-bottom: 7px;
   }
 
-  @include tablet {
+  @include desktop {
+    margin-bottom: 7px;
     font-size: 17px;
   }
 }
@@ -30,10 +32,10 @@
   text-decoration: none;
 
   @include tablet {
-    font-size: 18px;
+    font-size: 17px;
   }
 
-  @include tablet {
+  @include desktop {
     font-size: 17px;
   }
 }

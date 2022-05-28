@@ -1,7 +1,10 @@
 .socials {
+  position: relative;
   margin: 0 89px 28px 89px;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
 
   @include tablet {
     margin: 0 auto;
@@ -9,6 +12,25 @@
 
   @include desktop {
     margin: 0 auto;
+  }
+}
+
+.socials::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  z-index: 99;
+  left: -60px;
+  width: 260px;
+  height: 1px;
+  background-color: #e5e5e5;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
   }
 }
 

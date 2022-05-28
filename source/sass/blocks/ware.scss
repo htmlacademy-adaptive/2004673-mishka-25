@@ -18,15 +18,6 @@
     margin: 0;
     min-width: 316px;
     flex-direction: column;
-
-    &__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-width: 316px;
-      width: 100%;
-    }
   }
 
   &:hover {
@@ -36,6 +27,13 @@
   &:disabled {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
+}
+
+.ware__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .ware:nth-child(2) picture {

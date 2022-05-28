@@ -24,6 +24,7 @@
   @include desktop {
     height: 88px;
     width: 100%;
+    align-items: center;
 
     &::after {
       content: "";
@@ -103,6 +104,7 @@
 
   @include desktop {
     flex-direction: row;
+    max-width: 1150px;
   }
 }
 
